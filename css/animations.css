@@ -1,0 +1,73 @@
+/* ============================================================
+   ANIMATIONS – Pôle doctrinal du Cercle d'Action Légitimiste
+   ============================================================ */
+
+/* ---------- FADE UP ---------- */
+[data-aos="fade-up"] {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+[data-aos="fade-up"].aos-anime {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ---------- FADE LEFT ---------- */
+[data-aos="fade-left"] {
+    opacity: 0;
+    transform: translateX(-40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+[data-aos="fade-left"].aos-anime {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ---------- FADE RIGHT ---------- */
+[data-aos="fade-right"] {
+    opacity: 0;
+    transform: translateX(40px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+[data-aos="fade-right"].aos-anime {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ---------- SCALE IN ---------- */
+[data-aos="scale-in"] {
+    opacity: 0;
+    transform: scale(0.92);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+[data-aos="scale-in"].aos-anime {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* ---------- DÉLAIS ---------- */
+[data-aos-delay="100"] {
+    transition-delay: 0.1s;
+}
+[data-aos-delay="200"] {
+    transition-delay: 0.2s;
+}
+[data-aos-delay="300"] {
+    transition-delay: 0.3s;
+}
+[data-aos-delay="400"] {
+    transition-delay: 0.4s;
+}
+[data-aos-delay="500"] {
+    transition-delay: 0.5s;
+}
+
+/* ---------- APPARITION AU SCROLL ---------- */
+@media (prefers-reduced-motion: reduce) {
+    [data-aos] {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+}

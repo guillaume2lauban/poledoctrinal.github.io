@@ -1,0 +1,37 @@
+{
+    "nomSite": "Pôle doctrinal du Cercle d'Action Légitimiste",
+    "slogan": "Pour Dieu, la Patrie et le Roi",
+    "description": "Le Pôle doctrinal du Cercle d'Action Légitimiste rassemble les écrits, réflexions et enseignements pour la défense de la royauté légitime et de la tradition catholique.",
+    "logo": "icones/logo-doctrinal.svg",
+    "favicon": "icones/favicon-doctrinal.ico",
+    "couleurs": {
+        "principale": "#1E438C",
+        "secondaire": "#BD8F28",
+        "blanc": "#FFFFFF",
+        "noir": "#111111",
+        "rouge": "#B22234"
+    },
+    "emailContact": "legitimiste@protonmail.com",
+    "reseauSociaux": {
+        "instagram": "https://www.instagram.com/calpoledoctrinal",
+        "instagramHandle": "@calpoledoctrinal",
+        "linktree": "https://linktr.ee/ActionLegitimiste",
+        "siteOfficiel": "https://actionlegitimiste-ds.netlify.app/"
+    },
+    "nbPublicationsAccueil": 6,
+    "nbPublicationsParPage": 9,
+    "copyright": "Cercle d'Action Légitimiste – Tous droits réservés",
+    "texteBanniereCookies": "🍪 Ce site utilise uniquement des cookies techniques nécessaires à son fonctionnement. Aucune donnée personnelle n'est partagée à des fins publicitaires ou analytiques. En acceptant, vous autorisez le dépôt de ces cookies. En refusant, certaines fonctionnalités pourraient être limitées.",
+    "seo": {
+        "title": "Pôle doctrinal du Cercle d'Action Légitimiste",
+        "description": "Le Pôle doctrinal du Cercle d'Action Légitimiste : doctrine, histoire, philosophie, théologie, royauté, politique, société, éditoriaux et publications.",
+        "keywords": "légitimisme, royauté, doctrine, histoire, philosophie politique, théologie, Cercle d'Action Légitimiste",
+        "ogImage": "images/og-image.jpg",
+        "twitterCard": "summary_large_image"
+    },
+    "parametresFormulaire": {
+        "destinataire": "legitimiste@protonmail.com",
+        "sujetParDefaut": "Message depuis le site du Pôle doctrinal"
+    },
+    "version": "1.0.0"
+}

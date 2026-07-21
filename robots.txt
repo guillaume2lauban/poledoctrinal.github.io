@@ -1,0 +1,8 @@
+# Robots.txt pour le Pôle doctrinal du Cercle d'Action Légitimiste
+# Permet l'indexation complète du site
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://pole-doctrinal-legitimiste.github.io/sitemap.xml

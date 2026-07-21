@@ -1,0 +1,76 @@
+{
+    "items": [
+        {
+            "nom": "Accueil",
+            "url": "index.html",
+            "actif": false,
+            "externe": false
+        },
+        {
+            "nom": "Doctrine",
+            "url": "doctrine.html",
+            "actif": false,
+            "externe": false
+        },
+        {
+            "nom": "Histoire",
+            "url": "histoire.html",
+            "actif": false,
+            "externe": false
+        },
+        {
+            "nom": "Philosophie",
+            "url": "philosophie.html",
+            "actif": false,
+            "externe": false
+        },
+        {
+            "nom": "Théologie",
+            "url": "theologie.html",
+            "actif": false,
+            "externe": false
+        },
+        {
+            "nom": "Royauté",
+            "url": "royaute.html",
+            "actif": false,
+            "externe": false
+        },
+        {
+            "nom": "Politique",
+            "url": "politique.html",
+            "actif": false,
+            "externe": false
+        },
+        {
+            "nom": "Société",
+            "url": "societe.html",
+            "actif": false,
+            "externe": false
+        },
+        {
+            "nom": "Éditoriaux",
+            "url": "editoriaux.html",
+            "actif": false,
+            "externe": false
+        },
+        {
+            "nom": "Vidéos",
+            "url": "videos.html",
+            "actif": false,
+            "externe": false
+        },
+        {
+            "nom": "Actualités",
+            "url": "actualites.html",
+            "actif": false,
+            "externe": false
+        },
+        {
+            "nom": "Contact",
+            "url": "contact.html",
+            "actif": false,
+            "externe": false
+        }
+    ]
+}

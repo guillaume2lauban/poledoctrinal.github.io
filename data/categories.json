@@ -1,0 +1,76 @@
+{
+    "categories": [
+        {
+            "id": "doctrine",
+            "nom": "Doctrine",
+            "description": "Les fondements de la doctrine légitimiste",
+            "icone": "⚜️",
+            "couleur": "#1E438C",
+            "lien": "doctrine.html"
+        },
+        {
+            "id": "histoire",
+            "nom": "Histoire",
+            "description": "L'histoire de France",
+            "icone": "🏰",
+            "couleur": "#BD8F28",
+            "lien": "histoire.html"
+        },
+        {
+            "id": "philosophie",
+            "nom": "Philosophie",
+            "description": "Pensées philosophiques appliquées à la politique",
+            "icone": "📜",
+            "couleur": "#2A5EB0",
+            "lien": "philosophie.html"
+        },
+        {
+            "id": "theologie",
+            "nom": "Théologie",
+            "description": "Foi, morale et doctrine sociale",
+            "icone": "✝️",
+            "couleur": "#B22234",
+            "lien": "theologie.html"
+        },
+        {
+            "id": "royaute",
+            "nom": "Royauté",
+            "description": "Fondements et devoirs de la royauté",
+            "icone": "👑",
+            "couleur": "#BD8F28",
+            "lien": "royaute.html"
+        },
+        {
+            "id": "politique",
+            "nom": "Politique",
+            "description": "Analyse et projet politique légitimiste",
+            "icone": "🏛️",
+            "couleur": "#1E438C",
+            "lien": "politique.html"
+        },
+        {
+            "id": "societe",
+            "nom": "Société",
+            "description": "Ordre social, famille et corporatisme",
+            "icone": "👨‍👩‍👧‍👦",
+            "couleur": "#163366",
+            "lien": "societe.html"
+        },
+        {
+            "id": "editoriaux",
+            "nom": "Éditoriaux",
+            "description": "Prises de position et réflexions",
+            "icone": "✍️",
+            "couleur": "#B22234",
+            "lien": "editoriaux.html"
+        },
+        {
+            "id": "videos",
+            "nom": "Vidéos",
+            "description": "Conférences et contenus audiovisuels",
+            "icone": "🎥",
+            "couleur": "#2A5EB0",
+            "lien": "videos.html"
+        }
+    ]
+}

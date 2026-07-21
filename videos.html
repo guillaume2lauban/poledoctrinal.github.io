@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vidéos – Pôle doctrinal du Cercle d'Action Légitimiste</title>
+    <meta
+      name="description"
+      content="Les vidéos du Pôle doctrinal : conférences, entretiens, documentaires et contenus audiovisuels légitimistes."
+    />
+    <link
+      rel="canonical"
+      href="https://pole-doctrinal-legitimiste.github.io/videos.html"
+    />
+    <meta
+      property="og:title"
+      content="Vidéos – Pôle doctrinal du Cercle d'Action Légitimiste"
+    />
+    <meta
+      property="og:description"
+      content="Les vidéos du Pôle doctrinal : conférences, entretiens, documentaires et contenus audiovisuels légitimistes."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="icones/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="loader" role="status" aria-label="Chargement du site">
+      <div class="loader-spinner"></div>
+      <p class="loader-texte">Chargement…</p>
+    </div>
+
+    <header id="site-header" role="banner">
+      <div class="conteneur-header">
+        <div class="logo">
+          <a href="index.html" aria-label="Accueil du Pôle doctrinal">
+            <span class="logo-sigle">PD</span>
+            <span class="logo-texte"
+              >Pôle doctrinal<br /><small
+                >Cercle d'Action Légitimiste</small
+              ></span
+            >
+          </a>
+        </div>
+        <button
+          id="menu-burger"
+          class="menu-burger"
+          aria-expanded="false"
+          aria-controls="navigation-principale"
+          aria-label="Ouvrir le menu"
+        >
+          <span></span><span></span><span></span>
+        </button>
+        <nav
+          id="navigation-principale"
+          role="navigation"
+          aria-label="Navigation principale"
+        >
+          <ul id="menu-principal"></ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="contenu-principal" role="main">
+      <section class="section page-categorie" aria-label="Vidéos">
+        <div class="conteneur">
+          <div class="page-categorie-en-tete" data-aos="fade-up">
+            <h1>Vidéos</h1>
+            <p class="page-categorie-description">
+              Les vidéos du Pôle doctrinal : conférences, entretiens,
+              documentaires et contenus audiovisuels légitimistes.
+            </p>
+          </div>
+          <div
+            id="grille-publications-categorie"
+            class="grille-publications"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          ></div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="site-footer" role="contentinfo">
+      <div class="conteneur-footer">
+        <div class="footer-principal">
+          <div class="footer-colonne footer-colonne-about">
+            <h3>Pôle doctrinal</h3>
+            <p>
+              Le Pôle doctrinal du Cercle d'Action Légitimiste. Doctrine,
+              histoire, philosophie politique, théologie, royauté, politique,
+              société, éditoriaux et publications.
+            </p>
+            <div class="footer-reseaux">
+              <a
+                href="https://www.instagram.com/calpoledoctrinal"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Instagram du Pôle doctrinal"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+                <span>@calpoledoctrinal</span>
+              </a>
+              <a
+                href="https://linktr.ee/ActionLegitimiste"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Linktree du Cercle d'Action Légitimiste"
+              >
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 3v12m0 0-3-3m3 3 3-3M8 15h8" />
+                  <path d="M4 18v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2" />
+                </svg>
+                <span>Linktree</span>
+              </a>
+            </div>
+          </div>
+          <div class="footer-colonne footer-colonne-contact">
+            <h3>Nous contacter</h3>
+            <p>
+              <a href="mailto:legitimiste@protonmail.com"
+                >legitimiste@protonmail.com</a
+              >
+            </p>
+            <form id="footer-contact" class="footer-form" novalidate>
+              <div class="footer-form-groupe">
+                <label for="footer-nom">Nom et prénom *</label>
+                <input
+                  type="text"
+                  id="footer-nom"
+                  name="nom"
+                  required
+                  placeholder="Votre nom"
+                />
+              </div>
+              <div class="footer-form-groupe">
+                <label for="footer-email">Adresse email *</label>
+                <input
+                  type="email"
+                  id="footer-email"
+                  name="email"
+                  required
+                  placeholder="votre@email.fr"
+                />
+              </div>
+              <div class="footer-form-groupe">
+                <label for="footer-sujet">Sujet *</label>
+                <input
+                  type="text"
+                  id="footer-sujet"
+                  name="sujet"
+                  required
+                  placeholder="Sujet de votre message"
+                />
+              </div>
+              <div class="footer-form-groupe">
+                <label for="footer-message">Votre message *</label>
+                <textarea
+                  id="footer-message"
+                  name="message"
+                  required
+                  placeholder="Écrivez votre message…"
+                  rows="4"
+                ></textarea>
+              </div>
+              <div class="footer-form-groupe footer-form-checkbox">
+                <input
+                  type="checkbox"
+                  id="footer-consentement"
+                  name="consentement"
+                  required
+                />
+                <label for="footer-consentement"
+                  >J'accepte la
+                  <a href="politique-confidentialite.html"
+                    >politique de confidentialité</a
+                  >
+                  *</label
+                >
+              </div>
+              <button type="submit" class="bouton bouton-footer">
+                Envoyer
+              </button>
+            </form>
+          </div>
+          <div class="footer-colonne footer-colonne-liens">
+            <h3>Liens utiles</h3>
+            <ul>
+              <li><a href="mentions-legales.html">Mentions légales</a></li>
+              <li>
+                <a href="politique-confidentialite.html"
+                  >Politique de confidentialité</a
+                >
+              </li>
+              <li><a href="cgu.html">Conditions générales d'utilisation</a></li>
+              <li><a href="cookies.html">Politique des cookies</a></li>
+              <li>
+                <a
+                  href="https://actionlegitimiste-ds.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Site officiel du Cercle d'Action Légitimiste</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-legal">
+          <p>
+            &copy; <span id="footer-annee">2026</span> Cercle d'Action
+            Légitimiste – Tous droits réservés
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <div
+      id="banniere-cookies"
+      class="banniere-cookies"
+      role="dialog"
+      aria-label="Gestion des cookies"
+      hidden
+    >
+      <div class="banniere-cookies-contenu">
+        <p>
+          🍪 Ce site utilise uniquement des cookies techniques nécessaires à son
+          fonctionnement. Aucune donnée personnelle n'est partagée à des fins
+          publicitaires ou analytiques. En acceptant, vous autorisez le dépôt de
+          ces cookies. En refusant, certaines fonctionnalités pourraient être
+          limitées.
+        </p>
+        <div class="banniere-cookies-actions">
+          <button id="cookies-accepter" class="bouton bouton-cookies-accepter">
+            Accepter
+          </button>
+          <button id="cookies-refuser" class="bouton bouton-cookies-refuser">
+            Refuser
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/loader.js"></script>
+    <script src="js/cookies.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/categories.js"></script>
+    <script src="js/publications.js"></script>
+    <script src="js/blocks.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        chargerPublicationsParCategorie(
+          "videos",
+          "grille-publications-categorie",
+        );
+      });
+    </script>
+  </body>
+</html>
