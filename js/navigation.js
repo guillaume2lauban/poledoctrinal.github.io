@@ -164,7 +164,7 @@
             }
         });
 
-        // Fermer via l'overlay (UNIQUEMENT l'overlay)
+        // Fermer via l'overlay
         overlay.addEventListener('click', function(e) {
             e.stopPropagation();
             fermerMenu();
@@ -184,20 +184,18 @@
             }
         });
 
-        // CRUCIAL : laisser les clics sur les liens fonctionner normalement
-        // On ne bloque PAS les événements sur le menu
-        // On ne fait PAS e.preventDefault() sur les liens
-        // On laisse la navigation se faire normalement
-
-        // Lorsqu'on clique sur un lien dans le menu, on ferme le menu
-        nav.querySelectorAll('a').forEach(function(lien) {
-            lien.addEventListener('click', function() {
-                // Fermer le menu après un petit délai pour laisser la navigation se faire
+        // Ne pas ajouter d'écouteur sur les liens individuellement.
+        // Utiliser un écouteur sur le nav pour détecter les clics sur les liens
+        // et fermer le menu après la navigation.
+        nav.addEventListener('click', function(e) {
+            const target = e.target.closest('a');
+            if (target && target.getAttribute('href') && !target.getAttribute('href').startsWith('#')) {
+                // C'est un lien de navigation, on ferme le menu après un court délai
                 setTimeout(function() {
                     fermerMenu();
-                }, 150);
-            });
-        });
+                }, 200);
+            }
+        }, true); // capture pour être sûr
     }
 
     // Initialisation
