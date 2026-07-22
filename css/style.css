@@ -310,7 +310,7 @@ h4 {
 }
 
 /* Menu burger */
-.menu-burger {
+/*.menu-burger {
     display: none;
     flex-direction: column;
     gap: 5px;
@@ -335,13 +335,13 @@ h4 {
 }
 .menu-burger.actif span:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -6px);
-}
+}*/
 
 /* Navigation */
-#navigation-principale {
+/*#navigation-principale {
     display: flex;
     align-items: center;
-}
+}*/
 #menu-principal {
     display: flex;
     gap: 8px;
@@ -1369,7 +1369,7 @@ h4 {
 }
 
 /* Navigation mobile */
-#navigation-principale {
+/*#navigation-principale {
     position: fixed;
     top: 0;
     right: -100%;
@@ -1383,21 +1383,21 @@ h4 {
     transition: right 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     overflow-y: auto;
     border-left: 1px solid var(--gris-moyen);
-    z-index: 1000; /* Supérieur à l'overlay */
-}
+    z-index: 1000;*/ /* Supérieur à l'overlay */
+/*}
 #navigation-principale.ouvert {
     right: 0;
-}
+}*/
 
 /* Menu burger */
-.menu-burger {
+/*.menu-burger {
     display: none;
     flex-direction: column;
     gap: 5px;
     padding: 8px;
     z-index: 1100; /* Supérieur à tout */
-    position: relative;
-}
+    /*position: relative;
+}*/
 
 /* ---------- EN-TÊTE ---------- */
 #site-header {
@@ -1441,7 +1441,7 @@ h4 {
 }
 
 /* Menu burger (caché sur ordinateur) */
-.menu-burger {
+/*.menu-burger {
     display: none;
     flex-direction: column;
     gap: 5px;
@@ -1467,13 +1467,13 @@ h4 {
 }
 .menu-burger.actif span:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -6px);
-}
+}*/
 
 /* Navigation – visible sur ordinateur */
-#navigation-principale {
+/*#navigation-principale {
     display: flex;
     align-items: center;
-}
+}*/
 #menu-principal {
     display: flex;
     gap: 6px;
@@ -1565,12 +1565,12 @@ h4 {
 
 @media (max-width: 768px) {
     /* Afficher le burger */
-    .menu-burger {
+    /*.menu-burger {
         display: flex;
-    }
+    }*/
 
     /* Navigation en overlay mobile */
-    #navigation-principale {
+    /*#navigation-principale {
         position: fixed;
         top: 0;
         right: -100%;
@@ -1589,7 +1589,7 @@ h4 {
     }
     #navigation-principale.ouvert {
         right: 0;
-    }
+    }*/
 
     #menu-principal {
         flex-direction: column;
@@ -1668,4 +1668,93 @@ h4 {
 }
 .hero-contenu {
     width: 100%;
+}
+
+.menu-burger {
+    display: flex; /* Toujours affiché sur mobile/tablette */
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+    z-index: 1100;
+    position: relative;
+}
+
+/* ---------- RÉINITIALISATION MENU BURGER ---------- */
+.menu-burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 8px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+    position: relative;
+}
+.menu-burger span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: var(--noir);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+.menu-burger.actif span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+.menu-burger.actif span:nth-child(2) {
+    opacity: 0;
+}
+.menu-burger.actif span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+}
+
+@media (max-width: 1024px) {
+    .menu-burger {
+        display: flex !important;
+    }
+    #navigation-principale {
+        display: none !important;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 360px;
+        height: 100vh;
+        height: 100dvh;
+        background: var(--blanc);
+        box-shadow: var(--ombre-forte);
+        padding: 80px 32px 32px;
+        z-index: 1000;
+        overflow-y: auto;
+        border-left: 1px solid var(--gris-moyen);
+        transition: right 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    #navigation-principale.ouvert {
+        display: block !important;
+        right: 0;
+    }
+}
+
+@media (min-width: 1025px) {
+    .menu-burger {
+        display: none !important;
+    }
+    #navigation-principale {
+        display: flex !important;
+        position: static;
+        width: auto;
+        height: auto;
+        padding: 0;
+        box-shadow: none;
+        border-left: none;
+        background: transparent;
+        overflow: visible;
+        transition: none;
+    }
+    #menu-principal {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
 }

@@ -20,7 +20,7 @@
 /* ---------- TABLETTE (≤ 768px) ---------- */
 @media (max-width: 768px) {
     /* Menu burger */
-    .menu-burger {
+    /*.menu-burger {
         display: flex;
     }
     #navigation-principale {
@@ -39,7 +39,7 @@
     }
     #navigation-principale.ouvert {
         right: 0;
-    }
+    }*/
     #menu-principal {
         flex-direction: column;
         align-items: stretch;
@@ -287,4 +287,53 @@
         min-height: 100dvh;
         padding: 80px 16px 40px;
     }
+}
+
+/* Menu burger visible jusqu'à 1024px (tablettes paysage incluses) */
+@media (max-width: 1024px) {
+    /*.menu-burger {
+        display: flex !important;
+    }
+    #navigation-principale {
+        display: none; *//* Caché par défaut, ouvert via JS */
+    /*}
+    #navigation-principale.ouvert {
+        display: block;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 80%;
+        max-width: 360px;
+        height: 100vh;
+        height: 100dvh;
+        background: var(--blanc);
+        box-shadow: var(--ombre-forte);
+        padding: 80px 32px 32px;
+        z-index: 1000;
+        overflow-y: auto;
+        border-left: 1px solid var(--gris-moyen);
+    }*/
+}
+
+/* Menu horizontal pour les grands écrans */
+@media (min-width: 1025px) {
+    /*.menu-burger {
+        display: none !important;
+    }
+    #navigation-principale {
+        display: flex !important;
+        position: static;
+        width: auto;
+        height: auto;
+        padding: 0;
+        box-shadow: none;
+        border-left: none;
+        background: transparent;
+        overflow: visible;
+    }
+    #menu-principal {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }*/
 }

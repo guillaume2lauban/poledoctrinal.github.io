@@ -1,12 +1,6 @@
 {
     "items": [
         {
-            "nom": "Accueil",
-            "url": "index.html",
-            "actif": false,
-            "externe": false
-        },
-        {
             "nom": "Histoire",
             "url": "histoire.html",
             "actif": false,
