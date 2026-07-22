@@ -33,5 +33,6 @@
         "destinataire": "legitimiste@protonmail.com",
         "sujetParDefaut": "Message depuis le site du Pôle doctrinal"
     },
+    "formEndpoint": "https://formspree.io/f/xvzebprk",
     "version": "1.0.0"
 }

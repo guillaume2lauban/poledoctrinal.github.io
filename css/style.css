@@ -1248,3 +1248,26 @@ h4 {
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
+
+/* --------- AJOUTS ----------*/
+/* Logo image */
+.logo-image {
+    height: 60px;
+    width: auto;
+    display: block;
+}
+
+/* Overlay du menu mobile */
+#menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1050;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+#menu-overlay.visible {
+    opacity: 1;
+    pointer-events: auto;
+}

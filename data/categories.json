@@ -1,17 +1,9 @@
 {
     "categories": [
         {
-            "id": "doctrine",
-            "nom": "Doctrine",
-            "description": "Les fondements de la doctrine légitimiste",
-            "icone": "⚜️",
-            "couleur": "#1E438C",
-            "lien": "doctrine.html"
-        },
-        {
             "id": "histoire",
             "nom": "Histoire",
-            "description": "L'histoire de France",
+            "description": "L'histoire de la royauté en France",
             "icone": "🏰",
             "couleur": "#BD8F28",
             "lien": "histoire.html"
@@ -19,7 +11,7 @@
         {
             "id": "philosophie",
             "nom": "Philosophie",
-            "description": "Pensées philosophiques appliquées à la politique",
+            "description": "Pensée politique et souveraineté",
             "icone": "📜",
             "couleur": "#2A5EB0",
             "lien": "philosophie.html"
@@ -57,6 +49,14 @@
             "lien": "societe.html"
         },
         {
+            "id": "actualites",
+            "nom": "Actualités",
+            "description": "Actualités du Pôle doctrinal",
+            "icone": "📰",
+            "couleur": "#1E438C",
+            "lien": "actualites.html"
+        },
+        {
             "id": "editoriaux",
             "nom": "Éditoriaux",
             "description": "Prises de position et réflexions",
@@ -71,6 +71,14 @@
             "icone": "🎥",
             "couleur": "#2A5EB0",
             "lien": "videos.html"
+        },
+        {
+            "id": "evenements",
+            "nom": "Évènements",
+            "description": "Évènements et manifestations",
+            "icone": "🗓️",
+            "couleur": "#BD8F28",
+            "lien": "evenements.html"
         }
     ]
 }

@@ -71,7 +71,7 @@ async function afficherCategoriesGrille(conteneurId) {
     }
 
     // Limiter à 6 catégories pour l'accueil
-    const afficher = categories.slice(0, 6);
+    const afficher = categories;
 
     let html = '';
     afficher.forEach(function(cat) {

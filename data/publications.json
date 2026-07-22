@@ -2,67 +2,167 @@
     "publications": [
         {
             "id": 1,
-            "slug": "fondements-royaute-legitime",
-            "titre": "Les fondements de la royauté légitime",
-            "date": "2026-01-15",
-            "auteur": "Père Jean-Baptiste de La Tour",
+            "slug": "la-famille-fondement-societe",
+            "titre": "La famille, fondement de la société chrétienne",
+            "date": "2025-12-12",
+            "auteur": "Mme. Élisabeth de Montfort",
             "type": "article",
-            "descriptionCourte": "Une réflexion approfondie sur les fondements théologiques et philosophiques de la royauté légitime selon la tradition catholique.",
-            "imageCouverture": "images/sacre-charles-vii.jpg",
-            "categories": ["doctrine", "royaute", "theologie"],
-            "motsCles": ["royauté", "légitimisme", "tradition", "théologie politique"],
+            "descriptionCourte": "La famille est la cellule de base de la société. Sa restauration est la condition indispensable à la renaissance de la royauté légitime.",
+            "imageCouverture": "images/famille-royale.jpg",
+            "categories": ["societe", "philosophie"],
+            "motsCles": ["famille", "société", "éducation", "tradition", "royauté"],
             "contenu": [
                 {
                     "type": "titre",
-                    "texte": "La royauté de droit divin"
+                    "texte": "La famille, Église domestique"
                 },
                 {
                     "type": "paragraphe",
-                    "texte": "La doctrine légitimiste affirme que l'autorité royale émane directement de Dieu, non du peuple ni d'une quelconque délégation humaine. Le roi est le vicaire de Dieu sur terre, chargé de gouverner son peuple selon la loi divine et la raison naturelle."
+                    "texte": "La famille est la première société naturelle, antérieure à l'État. Elle est fondée sur le mariage, sacrement qui unit un homme et une femme dans une communauté de vie et d'amour."
                 },
                 {
                     "type": "citation",
-                    "texte": "Il n'y a pas de puissance qui ne vienne de Dieu, et celles qui existent ont été établies par Dieu.",
-                    "auteur": "Saint Paul, Épître aux Romains 13, 1"
+                    "texte": "La famille est l'Église domestique, où les parents sont les premiers éducateurs de leurs enfants dans la foi.",
+                    "auteur": "Concile Vatican II, Lumen Gentium"
                 },
                 {
                     "type": "paragraphe",
-                    "texte": "Cette conception de la royauté s'oppose radicalement aux théories modernes du contrat social et de la souveraineté populaire. La monarchie légitimiste n'est pas un régime parmi d'autres, mais l'expression même de l'ordre naturel et divin."
+                    "texte": "La crise actuelle de la famille est la cause profonde de la crise de la société. La restauration de la royauté légitime passe par la restauration de la famille chrétienne."
                 },
                 {
                     "type": "encadre",
-                    "titre": "À retenir",
-                    "texte": "La royauté légitime est héréditaire, sacrée et indivisible. Elle se transmet par la loi salique et ne peut être ni élective ni partagée."
-                },
-                {
-                    "type": "separateur"
-                },
-                {
-                    "type": "sous-titre",
-                    "texte": "L'héritage de la tradition française"
-                },
-                {
-                    "type": "paragraphe",
-                    "texte": "La France est une fille aînée de l'Église. Sa royauté, depuis le baptême de Clovis, a été consacrée par l'onction du Saint-Chrême. Cette onction confère au roi un caractère sacré et une responsabilité spirituelle envers son peuple."
-                },
-                {
-                    "type": "citation",
-                    "texte": "Le roi de France est le lieutenant de Dieu en son royaume.",
-                    "auteur": "Bossuet, Politique tirée de l'Écriture sainte"
-                },
-                {
-                    "type": "paragraphe",
-                    "texte": "La continuité dynastique est la garantie de la pérennité du royaume. La branche aînée des Capétiens, issue de Hugues Capet, est la seule à pouvoir légitimement prétendre au trône."
-                },
-                {
-                    "type": "bouton",
-                    "texte": "Lire la suite sur la doctrine",
-                    "url": "doctrine.html"
+                    "titre": "Les devoirs de la famille",
+                    "texte": "Les parents ont le devoir d'éduquer leurs enfants dans la foi, de leur transmettre les valeurs de la tradition et de les préparer à assumer leurs responsabilités dans la société."
                 }
             ]
         },
         {
             "id": 2,
+            "slug": "la-liturgie-royale",
+            "titre": "La liturgie royale du sacre",
+            "date": "2025-12-20",
+            "auteur": "Mgr. Étienne de Beaumont",
+            "type": "article",
+            "descriptionCourte": "Le sacre des rois de France : signification spirituelle, rites et symboles de la consécration monarchique.",
+            "imageCouverture": "images/sacre.jpg",
+            "categories": ["theologie", "histoire", "royaute"],
+            "motsCles": ["sacre", "liturgie", "roi", "consécration", "Reims"],
+            "contenu": [
+                {
+                    "type": "titre",
+                    "texte": "Le sacre, sommet de la liturgie royale"
+                },
+                {
+                    "type": "paragraphe",
+                    "texte": "Le sacre des rois de France, célébré à Reims, était l'acte liturgique le plus solennel du royaume. Il conférait au roi son caractère sacré et l'installait dans sa fonction de lieutenant de Dieu sur terre."
+                },
+                {
+                    "type": "citation",
+                    "texte": "Par l'onction du Saint-Chrême, le roi reçoit la grâce de l'Esprit Saint pour gouverner son peuple dans la justice et la paix.",
+                    "auteur": "Ordo du sacre des rois de France"
+                },
+                {
+                    "type": "image",
+                    "src": "images/cathedrale-reims.jpg",
+                    "legende": "La cathédrale de Reims, lieu du sacre des rois de France"
+                },
+                {
+                    "type": "paragraphe",
+                    "texte": "Le rite du sacre comprend l'onction, la remise des insignes royaux (la couronne, le sceptre, la main de justice) et le serment du roi. Chaque geste est chargé de sens théologique et politique."
+                },
+                {
+                    "type": "accordion",
+                    "questions": [
+                        {
+                            "question": "Que symbolise l'onction du Saint-Chrême ?",
+                            "reponse": "L'onction confère au roi une participation au sacerdoce du Christ. Elle le rend inviolable et le consacre à la protection de l'Église et de son peuple."
+                        },
+                        {
+                            "question": "Pourquoi le sacre a-t-il lieu à Reims ?",
+                            "reponse": "Reims est la ville du baptême de Clovis, premier roi chrétien. La tradition veut que tous les rois de France y soient sacrés en continuité avec cet événement fondateur."
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "slug": "introduction-philosophie-politique",
+            "titre": "Introduction à la philosophie politique légitimiste",
+            "date": "2025-12-28",
+            "auteur": "Dr. François de Blois",
+            "type": "article",
+            "descriptionCourte": "Les principaux jalons de la pensée politique légitimiste, de saint Thomas d'Aquin à Joseph de Maistre.",
+            "imageCouverture": "images/st-thomas.jpg",
+            "categories": ["philosophie"],
+            "motsCles": ["philosophie politique", "légitimisme", "tradition", "souveraineté"],
+            "contenu": [
+                {
+                    "type": "titre",
+                    "texte": "Les sources de la pensée légitimiste"
+                },
+                {
+                    "type": "paragraphe",
+                    "texte": "La philosophie politique légitimiste puise ses sources dans la tradition thomiste et la pensée contre-révolutionnaire. Elle s'oppose à la fois au libéralisme et au socialisme, qui sont deux avatars de la même erreur : l'oubli de Dieu."
+                },
+                {
+                    "type": "citation",
+                    "texte": "La politique n'est que la morale appliquée à la conduite des peuples.",
+                    "auteur": "Saint Thomas d'Aquin"
+                },
+                {
+                    "type": "paragraphe",
+                    "texte": "Le bien commun est la fin de la société politique. Il ne peut être atteint que sous la conduite d'un prince juste, qui gouverne selon la loi naturelle et la loi révélée."
+                },
+                {
+                    "type": "chronologie",
+                    "evenements": [
+                        { "date": "XIIIe siècle", "texte": "Saint Thomas d'Aquin pose les fondements de la doctrine politique chrétienne." },
+                        { "date": "XVIIe siècle", "texte": "Bossuet développe la théorie de la royauté de droit divin." },
+                        { "date": "1793", "texte": "Exécution de Louis XVI et début de la contre-révolution légitimiste." },
+                        { "date": "XXe siècle", "texte": "Le mouvement légitimiste se structure et publie ses grandes synthèses doctrinales." }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "slug": "crise-modernite-et-royante",
+            "titre": "La crise de la modernité et la royauté",
+            "date": "2026-01-05",
+            "auteur": "Philippe de Saint-Martin",
+            "type": "editorial",
+            "descriptionCourte": "L'effondrement de la modernité ouvre la voie à un retour de la royauté légitime comme seul remède à la crise civilisationnelle.",
+            "imageCouverture": "images/pride.jpg",
+            "categories": ["philosophie", "politique", "editoriaux"],
+            "motsCles": ["modernité", "crise", "royauté", "contre-révolution", "tradition"],
+            "contenu": [
+                {
+                    "type": "titre",
+                    "texte": "La fin de la modernité"
+                },
+                {
+                    "type": "paragraphe",
+                    "texte": "La modernité, fondée sur l'idolâtrie de la raison autonome et du progrès indéfini, est entrée dans une phase d'effondrement généralisé. Le relativisme, l'individualisme et le matérialisme ont déconstruit tous les repères qui faisaient la cohésion de la société."
+                },
+                {
+                    "type": "citation",
+                    "texte": "La Révolution a décapité la France, mais elle a surtout décapité le principe d'autorité lui-même.",
+                    "auteur": "Joseph de Maistre"
+                },
+                {
+                    "type": "paragraphe",
+                    "texte": "Dans ce chaos, la royauté légitime apparaît comme le seul principe d'ordre capable de rétablir la hiérarchie naturelle et divine. Le roi, lieutenant de Dieu, est le garant de l'unité du corps social."
+                },
+                {
+                    "type": "bouton",
+                    "texte": "Lire l'éditorial complet",
+                    "url": "editoriaux.html"
+                }
+            ]
+        },
+        {
+            "id": 5,
             "slug": "saint-louis-roi-parfait",
             "titre": "Saint Louis, le roi parfait",
             "date": "2026-01-10",
@@ -114,165 +214,65 @@
             ]
         },
         {
-            "id": 3,
-            "slug": "crise-modernite-et-royante",
-            "titre": "La crise de la modernité et la royauté",
-            "date": "2026-01-05",
-            "auteur": "Philippe de Saint-Martin",
-            "type": "editorial",
-            "descriptionCourte": "L'effondrement de la modernité ouvre la voie à un retour de la royauté légitime comme seul remède à la crise civilisationnelle.",
-            "imageCouverture": "images/pride.jpg",
-            "categories": ["philosophie", "politique", "editoriaux"],
-            "motsCles": ["modernité", "crise", "royauté", "contre-révolution", "tradition"],
-            "contenu": [
-                {
-                    "type": "titre",
-                    "texte": "La fin de la modernité"
-                },
-                {
-                    "type": "paragraphe",
-                    "texte": "La modernité, fondée sur l'idolâtrie de la raison autonome et du progrès indéfini, est entrée dans une phase d'effondrement généralisé. Le relativisme, l'individualisme et le matérialisme ont déconstruit tous les repères qui faisaient la cohésion de la société."
-                },
-                {
-                    "type": "citation",
-                    "texte": "La Révolution a décapité la France, mais elle a surtout décapité le principe d'autorité lui-même.",
-                    "auteur": "Joseph de Maistre"
-                },
-                {
-                    "type": "paragraphe",
-                    "texte": "Dans ce chaos, la royauté légitime apparaît comme le seul principe d'ordre capable de rétablir la hiérarchie naturelle et divine. Le roi, lieutenant de Dieu, est le garant de l'unité du corps social."
-                },
-                {
-                    "type": "bouton",
-                    "texte": "Lire l'éditorial complet",
-                    "url": "editoriaux.html"
-                }
-            ]
-        },
-        {
-            "id": 4,
-            "slug": "introduction-philosophie-politique",
-            "titre": "Introduction à la philosophie politique légitimiste",
-            "date": "2025-12-28",
-            "auteur": "Dr. François de Blois",
-            "type": "article",
-            "descriptionCourte": "Les principaux jalons de la pensée politique légitimiste, de saint Thomas d'Aquin à Joseph de Maistre.",
-            "imageCouverture": "images/st-thomas.jpg",
-            "categories": ["philosophie", "doctrine"],
-            "motsCles": ["philosophie politique", "légitimisme", "tradition", "souveraineté"],
-            "contenu": [
-                {
-                    "type": "titre",
-                    "texte": "Les sources de la pensée légitimiste"
-                },
-                {
-                    "type": "paragraphe",
-                    "texte": "La philosophie politique légitimiste puise ses sources dans la tradition thomiste et la pensée contre-révolutionnaire. Elle s'oppose à la fois au libéralisme et au socialisme, qui sont deux avatars de la même erreur : l'oubli de Dieu."
-                },
-                {
-                    "type": "citation",
-                    "texte": "La politique n'est que la morale appliquée à la conduite des peuples.",
-                    "auteur": "Saint Thomas d'Aquin"
-                },
-                {
-                    "type": "paragraphe",
-                    "texte": "Le bien commun est la fin de la société politique. Il ne peut être atteint que sous la conduite d'un prince juste, qui gouverne selon la loi naturelle et la loi révélée."
-                },
-                {
-                    "type": "chronologie",
-                    "evenements": [
-                        { "date": "XIIIe siècle", "texte": "Saint Thomas d'Aquin pose les fondements de la doctrine politique chrétienne." },
-                        { "date": "XVIIe siècle", "texte": "Bossuet développe la théorie de la royauté de droit divin." },
-                        { "date": "1793", "texte": "Exécution de Louis XVI et début de la contre-révolution légitimiste." },
-                        { "date": "XXe siècle", "texte": "Le mouvement légitimiste se structure et publie ses grandes synthèses doctrinales." }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": 5,
-            "slug": "la-liturgie-royale",
-            "titre": "La liturgie royale du sacre",
-            "date": "2025-12-20",
-            "auteur": "Mgr. Étienne de Beaumont",
-            "type": "article",
-            "descriptionCourte": "Le sacre des rois de France : signification spirituelle, rites et symboles de la consécration monarchique.",
-            "imageCouverture": "images/sacre.jpg",
-            "categories": ["theologie", "histoire", "royaute"],
-            "motsCles": ["sacre", "liturgie", "roi", "consécration", "Reims"],
-            "contenu": [
-                {
-                    "type": "titre",
-                    "texte": "Le sacre, sommet de la liturgie royale"
-                },
-                {
-                    "type": "paragraphe",
-                    "texte": "Le sacre des rois de France, célébré à Reims, était l'acte liturgique le plus solennel du royaume. Il conférait au roi son caractère sacré et l'installait dans sa fonction de lieutenant de Dieu sur terre."
-                },
-                {
-                    "type": "citation",
-                    "texte": "Par l'onction du Saint-Chrême, le roi reçoit la grâce de l'Esprit Saint pour gouverner son peuple dans la justice et la paix.",
-                    "auteur": "Ordo du sacre des rois de France"
-                },
-                {
-                    "type": "image",
-                    "src": "images/cathedrale-reims.jpg",
-                    "legende": "La cathédrale de Reims, lieu du sacre des rois de France"
-                },
-                {
-                    "type": "paragraphe",
-                    "texte": "Le rite du sacre comprend l'onction, la remise des insignes royaux (la couronne, le sceptre, la main de justice) et le serment du roi. Chaque geste est chargé de sens théologique et politique."
-                },
-                {
-                    "type": "accordion",
-                    "questions": [
-                        {
-                            "question": "Que symbolise l'onction du Saint-Chrême ?",
-                            "reponse": "L'onction confère au roi une participation au sacerdoce du Christ. Elle le rend inviolable et le consacre à la protection de l'Église et de son peuple."
-                        },
-                        {
-                            "question": "Pourquoi le sacre a-t-il lieu à Reims ?",
-                            "reponse": "Reims est la ville du baptême de Clovis, premier roi chrétien. La tradition veut que tous les rois de France y soient sacrés en continuité avec cet événement fondateur."
-                        }
-                    ]
-                }
-            ]
-        },
-        {
             "id": 6,
-            "slug": "la-famille-fondement-societe",
-            "titre": "La famille, fondement de la société chrétienne",
-            "date": "2025-12-12",
-            "auteur": "Mme. Élisabeth de Montfort",
+            "slug": "fondements-royaute-legitime",
+            "titre": "Les fondements de la royauté légitime",
+            "date": "2026-01-15",
+            "auteur": "Père Jean-Baptiste de La Tour",
             "type": "article",
-            "descriptionCourte": "La famille est la cellule de base de la société. Sa restauration est la condition indispensable à la renaissance de la royauté légitime.",
-            "imageCouverture": "images/famille-royale.jpg",
-            "categories": ["societe", "philosophie"],
-            "motsCles": ["famille", "société", "éducation", "tradition", "royauté"],
+            "descriptionCourte": "Une réflexion approfondie sur les fondements théologiques et philosophiques de la royauté légitime selon la tradition catholique.",
+            "imageCouverture": "images/sacre-charles-vii.jpg",
+            "categories": ["royaute", "theologie", "histoire"],
+            "motsCles": ["royauté", "légitimisme", "tradition", "théologie politique"],
             "contenu": [
                 {
                     "type": "titre",
-                    "texte": "La famille, Église domestique"
+                    "texte": "La royauté de droit divin"
                 },
                 {
                     "type": "paragraphe",
-                    "texte": "La famille est la première société naturelle, antérieure à l'État. Elle est fondée sur le mariage, sacrement qui unit un homme et une femme dans une communauté de vie et d'amour."
+                    "texte": "La doctrine légitimiste affirme que l'autorité royale émane directement de Dieu, non du peuple ni d'une quelconque délégation humaine. Le roi est le vicaire de Dieu sur terre, chargé de gouverner son peuple selon la loi divine et la raison naturelle."
                 },
                 {
                     "type": "citation",
-                    "texte": "La famille est l'Église domestique, où les parents sont les premiers éducateurs de leurs enfants dans la foi.",
-                    "auteur": "Concile Vatican II, Lumen Gentium"
+                    "texte": "Il n'y a pas de puissance qui ne vienne de Dieu, et celles qui existent ont été établies par Dieu.",
+                    "auteur": "Saint Paul, Épître aux Romains 13, 1"
                 },
                 {
                     "type": "paragraphe",
-                    "texte": "La crise actuelle de la famille est la cause profonde de la crise de la société. La restauration de la royauté légitime passe par la restauration de la famille chrétienne."
+                    "texte": "Cette conception de la royauté s'oppose radicalement aux théories modernes du contrat social et de la souveraineté populaire. La monarchie légitimiste n'est pas un régime parmi d'autres, mais l'expression même de l'ordre naturel et divin."
                 },
                 {
                     "type": "encadre",
-                    "titre": "Les devoirs de la famille",
-                    "texte": "Les parents ont le devoir d'éduquer leurs enfants dans la foi, de leur transmettre les valeurs de la tradition et de les préparer à assumer leurs responsabilités dans la société."
+                    "titre": "À retenir",
+                    "texte": "La royauté légitime est héréditaire, sacrée et indivisible. Elle se transmet par la loi salique et ne peut être ni élective ni partagée."
+                },
+                {
+                    "type": "separateur"
+                },
+                {
+                    "type": "sous-titre",
+                    "texte": "L'héritage de la tradition française"
+                },
+                {
+                    "type": "paragraphe",
+                    "texte": "La France est une fille aînée de l'Église. Sa royauté, depuis le baptême de Clovis, a été consacrée par l'onction du Saint-Chrême. Cette onction confère au roi un caractère sacré et une responsabilité spirituelle envers son peuple."
+                },
+                {
+                    "type": "citation",
+                    "texte": "Le roi de France est le lieutenant de Dieu en son royaume.",
+                    "auteur": "Bossuet, Politique tirée de l'Écriture sainte"
+                },
+                {
+                    "type": "paragraphe",
+                    "texte": "La continuité dynastique est la garantie de la pérennité du royaume. La branche aînée des Capétiens, issue de Hugues Capet, est la seule à pouvoir légitimement prétendre au trône."
+                },
+                {
+                    "type": "bouton",
+                    "texte": "Lire la suite sur l'histoire",
+                    "url": "histoire.html"
                 }
             ]
-        }
+        }   
     ]
 }
