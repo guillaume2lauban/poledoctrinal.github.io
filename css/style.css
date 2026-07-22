@@ -309,39 +309,6 @@ h4 {
     font-family: var(--police-texte);
 }
 
-/* Menu burger */
-/*.menu-burger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    padding: 8px;
-    z-index: 1100;
-}
-.menu-burger span {
-    display: block;
-    width: 28px;
-    height: 2.5px;
-    background: var(--noir);
-    border-radius: 4px;
-    transition: all var(--transition-moyenne);
-    transform-origin: center;
-}
-.menu-burger.actif span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-.menu-burger.actif span:nth-child(2) {
-    opacity: 0;
-    transform: scaleX(0);
-}
-.menu-burger.actif span:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
-}*/
-
-/* Navigation */
-/*#navigation-principale {
-    display: flex;
-    align-items: center;
-}*/
 #menu-principal {
     display: flex;
     gap: 8px;
@@ -405,17 +372,6 @@ h4 {
 }
 
 /* ---------- HÉROS ---------- */
-.hero {
-    position: relative;
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 120px 24px 80px;
-    overflow: hidden;
-    background: linear-gradient(135deg, #0A1A3A 0%, #1E438C 50%, #2A5EB0 100%);
-    margin-top: 0;
-}
 .hero-fond {
     position: absolute;
     inset: 0;
@@ -1249,54 +1205,13 @@ h4 {
     border: 0;
 }
 
-/* --------- AJOUTS ----------*/
-/* Logo image */
-.logo-image {
-    height: 60px;
-    width: auto;
-    display: block;
-}
-
-/* Overlay du menu mobile */
-#menu-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1050;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-}
-#menu-overlay.visible {
-    opacity: 1;
-    pointer-events: auto;
-}
-
 /* ---------- EN-TÊTE AVEC ANIMATION ---------- */
 #site-header {
     transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transform: translateY(0);
 }
 
-/* ---------- LOGO IMAGE ---------- */
-.logo-image {
-    height: 55px;
-    width: auto;
-    display: block;
-}
-
 /* ---------- HERO PLEIN ÉCRAN ---------- */
-.hero {
-    min-height: 100vh;
-    min-height: 100dvh; /* Pour les navigateurs mobiles */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 120px 24px 80px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
 
 .hero-page {
     position: relative;
@@ -1334,71 +1249,6 @@ h4 {
     padding-top: 60px;
 }
 
-.logo-image {
-    height: 55px;
-    width: auto;
-    max-width: 100%;
-    display: block;
-}
-
-.hero {
-    min-height: 100vh;
-    min-height: 100dvh; /* Pour les navigateurs mobiles modernes */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 100px 24px 60px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-/* Overlay du menu mobile */
-#menu-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 999; /* Inférieur au menu (qui est à 1000) */
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-}
-#menu-overlay.visible {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-/* Navigation mobile */
-/*#navigation-principale {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    width: 80%;
-    max-width: 360px;
-    height: 100vh;
-    height: 100dvh;
-    background: var(--blanc);
-    box-shadow: var(--ombre-forte);
-    padding: 80px 32px 32px;
-    transition: right 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    overflow-y: auto;
-    border-left: 1px solid var(--gris-moyen);
-    z-index: 1000;*/ /* Supérieur à l'overlay */
-/*}
-#navigation-principale.ouvert {
-    right: 0;
-}*/
-
-/* Menu burger */
-/*.menu-burger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    padding: 8px;
-    z-index: 1100; /* Supérieur à tout */
-    /*position: relative;
-}*/
-
 /* ---------- EN-TÊTE ---------- */
 #site-header {
     position: fixed;
@@ -1433,47 +1283,7 @@ h4 {
     gap: 12px;
     color: var(--noir);
 }
-.logo-image {
-    height: 55px;
-    width: auto;
-    max-width: 100%;
-    display: block;
-}
 
-/* Menu burger (caché sur ordinateur) */
-/*.menu-burger {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    padding: 8px;
-    z-index: 1100;
-    position: relative;
-}
-.menu-burger span {
-    display: block;
-    width: 28px;
-    height: 2.5px;
-    background: var(--noir);
-    border-radius: 4px;
-    transition: all var(--transition-moyenne);
-    transform-origin: center;
-}
-.menu-burger.actif span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-}
-.menu-burger.actif span:nth-child(2) {
-    opacity: 0;
-    transform: scaleX(0);
-}
-.menu-burger.actif span:nth-child(3) {
-    transform: rotate(-45deg) translate(6px, -6px);
-}*/
-
-/* Navigation – visible sur ordinateur */
-/*#navigation-principale {
-    display: flex;
-    align-items: center;
-}*/
 #menu-principal {
     display: flex;
     gap: 6px;
@@ -1539,21 +1349,6 @@ h4 {
     color: var(--bleu-principal);
 }
 
-/* ---------- OVERLAY MENU MOBILE ---------- */
-#menu-overlay {
-    position: fixed;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
-}
-#menu-overlay.visible {
-    opacity: 1;
-    pointer-events: auto;
-}
-
 /* ---------- RESPONSIVE : MOBILE ---------- */
 @media (max-width: 1024px) {
     /* Sur tablette, réduire l'espacement du menu */
@@ -1564,33 +1359,6 @@ h4 {
 }
 
 @media (max-width: 768px) {
-    /* Afficher le burger */
-    /*.menu-burger {
-        display: flex;
-    }*/
-
-    /* Navigation en overlay mobile */
-    /*#navigation-principale {
-        position: fixed;
-        top: 0;
-        right: -100%;
-        width: 80%;
-        max-width: 360px;
-        height: 100vh;
-        height: 100dvh;
-        background: var(--blanc);
-        box-shadow: var(--ombre-forte);
-        padding: 80px 32px 32px;
-        transition: right 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        overflow-y: auto;
-        border-left: 1px solid var(--gris-moyen);
-        z-index: 1000;
-        display: block;
-    }
-    #navigation-principale.ouvert {
-        right: 0;
-    }*/
-
     #menu-principal {
         flex-direction: column;
         align-items: stretch;
@@ -1623,18 +1391,6 @@ h4 {
 }
 
 /* ---------- HERO PLEIN ÉCRAN ---------- */
-.hero {
-    min-height: 100vh;
-    min-height: 100dvh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 .hero-page {
     position: relative;
     isolation: isolate;
@@ -1670,16 +1426,43 @@ h4 {
     width: 100%;
 }
 
-.menu-burger {
-    display: flex; /* Toujours affiché sur mobile/tablette */
-    flex-direction: column;
-    gap: 5px;
-    padding: 8px;
-    z-index: 1100;
-    position: relative;
+/* ---------- LOGO ---------- */
+.logo-image {
+    height: 55px;
+    width: auto;
+    max-width: 100%;
+    display: block;
 }
 
-/* ---------- RÉINITIALISATION MENU BURGER ---------- */
+/* ---------- HERO PLEIN ÉCRAN ---------- */
+.hero {
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ---------- OVERLAY MENU MOBILE ---------- */
+#menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+#menu-overlay.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* ---------- MENU BURGER ---------- */
 .menu-burger {
     display: none;
     flex-direction: column;
@@ -1709,6 +1492,7 @@ h4 {
     transform: rotate(-45deg) translate(5px, -6px);
 }
 
+/* ---------- NAVIGATION RESPONSIVE ---------- */
 @media (max-width: 1024px) {
     .menu-burger {
         display: flex !important;

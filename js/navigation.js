@@ -148,21 +148,27 @@
             menuBurger.setAttribute('aria-expanded', 'false');
             overlay.classList.remove('visible');
             document.body.style.overflow = '';
+            // Fermer les sous-menus ouverts
+            document.querySelectorAll('.sous-menu.ouvert').forEach(function(s) {
+                s.classList.remove('ouvert');
+            });
         }
 
-        function basculerMenu(e) {
-            e.preventDefault();
+        // Bascule du burger
+        menuBurger.addEventListener('click', function(e) {
+            e.stopPropagation();
             if (nav.classList.contains('ouvert')) {
                 fermerMenu();
             } else {
                 ouvrirMenu();
             }
-        }
+        });
 
-        menuBurger.addEventListener('click', basculerMenu);
-
-        // Fermer en cliquant sur l'overlay
-        overlay.addEventListener('click', fermerMenu);
+        // Fermer via l'overlay (UNIQUEMENT l'overlay)
+        overlay.addEventListener('click', function(e) {
+            e.stopPropagation();
+            fermerMenu();
+        });
 
         // Fermer avec Échap
         document.addEventListener('keydown', function(e) {
@@ -176,6 +182,21 @@
             if (window.innerWidth > 1024 && nav.classList.contains('ouvert')) {
                 fermerMenu();
             }
+        });
+
+        // CRUCIAL : laisser les clics sur les liens fonctionner normalement
+        // On ne bloque PAS les événements sur le menu
+        // On ne fait PAS e.preventDefault() sur les liens
+        // On laisse la navigation se faire normalement
+
+        // Lorsqu'on clique sur un lien dans le menu, on ferme le menu
+        nav.querySelectorAll('a').forEach(function(lien) {
+            lien.addEventListener('click', function() {
+                // Fermer le menu après un petit délai pour laisser la navigation se faire
+                setTimeout(function() {
+                    fermerMenu();
+                }, 150);
+            });
         });
     }
 
