@@ -5,4 +5,4 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://pole-doctrinal-legitimiste.github.io/sitemap.xml
+Sitemap: https://guillaume2lauban.github.io/poledoctrinal.github.io/sitemap.xml

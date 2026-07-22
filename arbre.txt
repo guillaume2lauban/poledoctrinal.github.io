@@ -1,17 +1,16 @@
 /
 ├── index.html
-├── doctrine.html
 ├── histoire.html
 ├── philosophie.html
 ├── theologie.html
 ├── royaute.html
 ├── politique.html
 ├── societe.html
+├── actualites.html
 ├── editoriaux.html
 ├── videos.html
-├── actualites.html
+├── evenements.html
 ├── publication.html
-├── contact.html
 ├── mentions-legales.html
 ├── politique-confidentialite.html
 ├── cgu.html
@@ -39,7 +38,27 @@
 │   └── publications.json
 │
 ├── images/
+│   ├── logo-doctrinal.svg
+│   ├── hero-histoire.jpg
+│   ├── hero-philosophie.jpg
+│   ├── hero-theologie.jpg
+│   ├── hero-royaute.jpg
+│   ├── hero-politique.jpg
+│   ├── hero-societe.jpg
+│   ├── hero-actualites.jpg
+│   ├── hero-editoriaux.jpg
+│   ├── hero-videos.jpg
+│   ├── hero-evenements.jpg
+│   ├── hero-mentions-legales.jpg   (optionnel)
+│   ├── hero-confidentialite.jpg    (optionnel)
+│   ├── hero-cgu.jpg                (optionnel)
+│   ├── hero-cookies.jpg            (optionnel)
+│   ├── hero-publication.jpg        (optionnel)
+│   └── ... (autres images)
+│
 ├── assets/
 ├── icones/
+│   └── favicon.ico
+│
 ├── robots.txt
 └── sitemap.xml

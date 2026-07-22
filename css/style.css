@@ -1271,3 +1271,65 @@ h4 {
     opacity: 1;
     pointer-events: auto;
 }
+
+/* ---------- EN-TÊTE AVEC ANIMATION ---------- */
+#site-header {
+    transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform: translateY(0);
+}
+
+/* ---------- LOGO IMAGE ---------- */
+.logo-image {
+    height: 55px;
+    width: auto;
+    display: block;
+}
+
+/* ---------- HERO PLEIN ÉCRAN ---------- */
+.hero {
+    min-height: 100vh;
+    min-height: 100dvh; /* Pour les navigateurs mobiles */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 120px 24px 80px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-page {
+    position: relative;
+    isolation: isolate;
+}
+.hero-page::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 26, 46, 0.65); /* Superposition pour la lisibilité */
+    z-index: 0;
+}
+.hero-page .conteneur-hero {
+    position: relative;
+    z-index: 1;
+}
+
+/* Ajustement pour la page d'accueil qui a déjà un fond dégradé */
+.hero-accueil {
+    background: linear-gradient(135deg, #0A1A3A 0%, #1E438C 50%, #2A5EB0 100%);
+}
+
+.hero-titre {
+    font-size: clamp(3rem, 12vw, 6rem); /* Très grand sur desktop */
+    font-weight: 900;
+    line-height: 1.05;
+    margin-bottom: 0.5rem;
+}
+.hero-titre .surligne {
+    color: var(--ocre-clair);
+}
+
+/* ---------- SECTION PUBLICATION SOUS LE HERO ---------- */
+.section-sous-hero {
+    padding-top: 60px;
+}

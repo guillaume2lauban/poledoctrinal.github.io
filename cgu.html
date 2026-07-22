@@ -63,12 +63,35 @@
     </header>
 
     <main id="contenu-principal" role="main">
+      <!-- HERO -->
       <section
-        class="section page-legale"
+        class="hero hero-page"
         aria-label="Conditions générales d'utilisation"
+        style="
+          background-image:
+            linear-gradient(rgba(10, 26, 46, 0.7), rgba(10, 26, 46, 0.85)),
+            url(&quot;images/hero-cgu.jpg&quot;);
+          background-size: cover;
+          background-position: center;
+        "
+      >
+        <div class="conteneur-hero">
+          <div class="hero-contenu" data-aos="fade-up">
+            <span class="hero-badge">Conditions d'utilisation</span>
+            <h1 class="hero-titre">Conditions générales</h1>
+            <p class="hero-sous-titre">
+              Les règles qui régissent l'accès et l'utilisation de ce site.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTENU -->
+      <section
+        class="section page-legale section-sous-hero"
+        aria-label="Contenu des conditions générales"
       >
         <div class="conteneur">
-          <h1 data-aos="fade-up">Conditions générales d'utilisation</h1>
           <div
             class="page-legale-contenu"
             data-aos="fade-up"
@@ -131,9 +154,9 @@
           <div class="footer-colonne footer-colonne-about">
             <h3>Pôle doctrinal</h3>
             <p>
-              Le Pôle doctrinal du Cercle d'Action Légitimiste. Doctrine,
-              histoire, philosophie politique, théologie, royauté, politique,
-              société, éditoriaux et publications.
+              Le Pôle doctrinal du Cercle d'Action Légitimiste. Histoire,
+              philosophie, théologie, royauté, politique, société, actualités,
+              éditoriaux, vidéos et évènements.
             </p>
             <div class="footer-reseaux">
               <a

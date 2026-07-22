@@ -10,6 +10,7 @@
      * Initialise l'ensemble de l'application
      */
     async function initialiserApplication() {
+    
         // Charger les configurations nécessaires
         try {
             // Charger les catégories (utilisées partout)
@@ -36,15 +37,57 @@
             // Gérer le header au scroll
             gererHeaderScroll();
 
+            gererHeaderAutoMasquant();
+            
             // Mettre à jour l'année dans le footer
             mettreAJourAnnee();
-
+            
             // Initialiser les formulaires de contact (déjà fait dans contact.js)
 
         } catch (erreur) {
             console.warn('Application :', erreur.message);
         }
     }
+
+    /**
+     * Gère le header auto-masquant au scroll
+     */
+    function gererHeaderAutoMasquant() {
+        const header = document.getElementById('site-header');
+        if (!header) return;
+
+        let dernierScrollY = window.scrollY;
+        let ticking = false;
+
+        function mettreAJourHeader() {
+            const currentScrollY = window.scrollY;
+
+            // Si on descend (et qu'on a dépassé 80px)
+            if (currentScrollY > dernierScrollY && currentScrollY > 80) {
+                header.style.transform = 'translateY(-100%)';
+            } 
+            // Si on remonte
+            else {
+                header.style.transform = 'translateY(0)';
+            }
+
+            dernierScrollY = currentScrollY;
+            ticking = false;
+        }
+
+        window.addEventListener('scroll', function() {
+            if (!ticking) {
+                window.requestAnimationFrame(function() {
+                    mettreAJourHeader();
+                });
+                ticking = true;
+            }
+        }, { passive: true });
+    }
+
+    // Appeler cette fonction dans initialiserApplication()
+    // Ajoutez cette ligne dans initialiserApplication() :
+    // gererHeaderAutoMasquant();
 
     /**
      * Initialise les animations au scroll (AOS simplifié)

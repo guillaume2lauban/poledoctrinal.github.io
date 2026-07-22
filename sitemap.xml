@@ -1,97 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://pole-doctrinal-legitimiste.github.io/</loc>
+        <loc>https://guillaume2lauban.github.io/poledoctrinal.github.io/</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://pole-doctrinal-legitimiste.github.io/doctrine.html</loc>
+        <loc>https://guillaume2lauban.github.io/poledoctrinal.github.io/histoire.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://pole-doctrinal-legitimiste.github.io/histoire.html</loc>
+        <loc>https://guillaume2lauban.github.io/poledoctrinal.github.io/philosophie.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://pole-doctrinal-legitimiste.github.io/philosophie.html</loc>
+        <loc>https://guillaume2lauban.github.io/poledoctrinal.github.io/theologie.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://pole-doctrinal-legitimiste.github.io/theologie.html</loc>
+        <loc>https://guillaume2lauban.github.io/poledoctrinal.github.io/royaute.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://pole-doctrinal-legitimiste.github.io/royaute.html</loc>
+        <loc>https://guillaume2lauban.github.io/poledoctrinal.github.io/politique.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://pole-doctrinal-legitimiste.github.io/politique.html</loc>
+        <loc>https://guillaume2lauban.github.io/poledoctrinal.github.io/societe.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://pole-doctrinal-legitimiste.github.io/societe.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://pole-doctrinal-legitimiste.github.io/editoriaux.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://pole-doctrinal-legitimiste.github.io/videos.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://pole-doctrinal-legitimiste.github.io/actualites.html</loc>
+        <loc>https://guillaume2lauban.github.io/poledoctrinal.github.io/actualites.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://guillaume2lauban.github.io/poledoctrinal.github.io/editoriaux.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://pole-doctrinal-legitimiste.github.io/contact.html</loc>
+        <loc>https://guillaume2lauban.github.io/poledoctrinal.github.io/videos.html</loc>
         <lastmod>2026-01-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://pole-doctrinal-legitimiste.github.io/mentions-legales.html</loc>
+        <loc>https://guillaume2lauban.github.io/poledoctrinal.github.io/evenements.html</loc>
         <lastmod>2026-01-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://pole-doctrinal-legitimiste.github.io/politique-confidentialite.html</loc>
-        <lastmod>2026-01-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.3</priority>
-    </url>
-    <url>
-        <loc>https://pole-doctrinal-legitimiste.github.io/cgu.html</loc>
+        <loc>https://guillaume2lauban.github.io/poledoctrinal.github.io/mentions-legales.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
     </url>
     <url>
-        <loc>https://pole-doctrinal-legitimiste.github.io/cookies.html</loc>
+        <loc>https://guillaume2lauban.github.io/poledoctrinal.github.io/politique-confidentialite.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://guillaume2lauban.github.io/poledoctrinal.github.io/cgu.html</loc>
+        <lastmod>2026-01-15</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <url>
+        <loc>https://guillaume2lauban.github.io/poledoctrinal.github.io/cookies.html</loc>
         <lastmod>2026-01-15</lastmod>
         <changefreq>yearly</changefreq>
         <priority>0.3</priority>
