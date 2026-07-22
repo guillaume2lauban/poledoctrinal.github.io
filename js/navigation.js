@@ -155,7 +155,8 @@
             });
         }
 
-        function basculerMenu() {
+        function basculerMenu(e) {
+            e.stopPropagation();
             if (nav.classList.contains('ouvert')) {
                 fermerMenu();
             } else {
@@ -163,8 +164,19 @@
             }
         }
 
+        // Événements
         menuBurger.addEventListener('click', basculerMenu);
-        overlay.addEventListener('click', fermerMenu);
+
+        // Fermeture via overlay (NE BLOQUE PAS LES CLICS SUR LE MENU)
+        overlay.addEventListener('click', function(e) {
+            e.stopPropagation();
+            fermerMenu();
+        });
+
+        // Empêcher la fermeture si on clique à l'intérieur du menu
+        nav.addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
 
         // Fermer avec Échap
         document.addEventListener('keydown', function(e) {
@@ -174,12 +186,10 @@
         });
 
         // Fermer en redimensionnant au-dessus de 768px
-        let dernierLargeur = window.innerWidth;
         window.addEventListener('resize', function() {
             if (window.innerWidth > 768 && nav.classList.contains('ouvert')) {
                 fermerMenu();
             }
-            dernierLargeur = window.innerWidth;
         });
     }
 

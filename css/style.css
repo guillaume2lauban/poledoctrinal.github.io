@@ -1333,3 +1333,68 @@ h4 {
 .section-sous-hero {
     padding-top: 60px;
 }
+
+.logo-image {
+    height: 55px;
+    width: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.hero {
+    min-height: 100vh;
+    min-height: 100dvh; /* Pour les navigateurs mobiles modernes */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 24px 60px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Overlay du menu mobile */
+#menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999; /* Inférieur au menu (qui est à 1000) */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+#menu-overlay.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Navigation mobile */
+#navigation-principale {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 360px;
+    height: 100vh;
+    height: 100dvh;
+    background: var(--blanc);
+    box-shadow: var(--ombre-forte);
+    padding: 80px 32px 32px;
+    transition: right 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    overflow-y: auto;
+    border-left: 1px solid var(--gris-moyen);
+    z-index: 1000; /* Supérieur à l'overlay */
+}
+#navigation-principale.ouvert {
+    right: 0;
+}
+
+/* Menu burger */
+.menu-burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+    z-index: 1100; /* Supérieur à tout */
+    position: relative;
+}
