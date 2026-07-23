@@ -5,7 +5,7 @@
 
 let publicationsCache = [];
 let publicationsParSlug = {};
-const PUBLICATIONS_PAR_PAGE = 9;
+let PUBLICATIONS_PAR_PAGE = 9;
 
 /**
  * Charge le fichier publications.json
@@ -233,10 +233,13 @@ async function chargerPublicationParSlug(slug, conteneurId) {
         return;
     }
 
-    // Générer le contenu avec le système de blocs
-    const blocksHtml = window.rendreBlocs ? window.rendreBlocs(pub.contenu) : '<p>Contenu indisponible.</p>';
+    // Remplir le héros
+    const heroContainer = document.getElementById('contenu-hero-publication');
+    const heroDiv = document.getElementById('hero-publication');
+    if (heroDiv && pub.imageCouverture) {
+        heroDiv.style.backgroundImage = `linear-gradient(rgba(10,26,46,0.7), rgba(10,26,46,0.85)), url('${pub.imageCouverture}')`;
+    }
 
-    // Métadonnées
     const dateObj = new Date(pub.date);
     const dateFormatee = dateObj.toLocaleDateString('fr-FR', {
         day: '2-digit',
@@ -247,53 +250,114 @@ async function chargerPublicationParSlug(slug, conteneurId) {
 
     const badgesCats = window.genererBadgesCategories ? window.genererBadgesCategories(pub.categories) : '';
 
-    const imagePrincipale = pub.imageCouverture
-        ? '<img src="' + pub.imageCouverture + '" alt="' + pub.titre + '" class="pub-image-principale" />'
-        : '';
+    // Type avec majuscule et accent
+    const typeLabels = {
+        'article': 'Article',
+        'video': 'Vidéo',
+        'editorial': 'Éditorial',
+        'communique': 'Communiqué',
+        'podcast': 'Podcast'
+    };
+    const typeLabel = typeLabels[pub.type] || pub.type || 'Publication';
 
-    const html = `
-        <div class="pub-en-tete">
+    if (heroContainer) {
+        heroContainer.innerHTML = `
             <div class="pub-categories">${badgesCats}</div>
-            <h1>${pub.titre}</h1>
-            <div class="pub-metadonnees">
+            <h1 class="hero-titre">${pub.titre}</h1>
+            <div class="pub-metadonnees" style="color:rgba(255,255,255,0.8);display:flex;flex-wrap:wrap;gap:16px;justify-content:center;font-size:1rem;">
                 <span>Par ${auteur}</span>
                 <span>${dateFormatee}</span>
-                <span>${pub.type || 'Publication'}</span>
+                <span style="font-weight:500;color:var(--ocre-clair);">${typeLabel}</span>
             </div>
-        </div>
-        ${imagePrincipale}
-        <div class="pub-corps">
-            ${blocksHtml}
-        </div>
-    `;
+        `;
+    }
 
-    conteneur.innerHTML = html;
+    // Générer le contenu (sans l'image de couverture)
+    const blocksHtml = window.rendreBlocs ? window.rendreBlocs(pub.contenu) : '<p>Contenu indisponible.</p>';
+    conteneur.innerHTML = `<div class="pub-corps">${blocksHtml}</div>`;
+
+    // Ajouter les boutons "Similaire" et "Toutes les publications"
+    const footerButtons = document.createElement('div');
+    footerButtons.className = 'publication-footer-buttons';
+    footerButtons.style.cssText = 'display:flex;flex-wrap:wrap;gap:16px;margin-top:2rem;justify-content:center;';
+
+    // Bouton "Similaire"
+    const similaireBtn = document.createElement('a');
+    similaireBtn.className = 'bouton bouton-secondaire';
+    similaireBtn.textContent = 'Lire une publication similaire';
+    const similaireSlug = trouverPublicationSimilaire(pub, publications);
+    similaireBtn.href = similaireSlug ? `publication.html?slug=${similaireSlug}` : '#';
+    if (!similaireSlug) similaireBtn.style.opacity = '0.5';
+    footerButtons.appendChild(similaireBtn);
+
+    // Bouton "Toutes les publications"
+    const toutesBtn = document.createElement('a');
+    toutesBtn.className = 'bouton bouton-primaire';
+    toutesBtn.textContent = 'Voir toutes les publications';
+    toutesBtn.href = 'catalogue.html';
+    footerButtons.appendChild(toutesBtn);
+
+    conteneur.appendChild(footerButtons);
 
     // Mettre à jour le titre de la page
     document.title = pub.titre + ' – Pôle doctrinal du Cercle d\'Action Légitimiste';
-
-    // Mettre à jour la meta description
     const metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc && pub.descriptionCourte) {
         metaDesc.setAttribute('content', pub.descriptionCourte);
     }
-
-    // Mettre à jour l'OG title
     const ogTitle = document.querySelector('meta[property="og:title"]');
     if (ogTitle) {
         ogTitle.setAttribute('content', pub.titre + ' – Pôle doctrinal du Cercle d\'Action Légitimiste');
     }
-
     const ogDesc = document.querySelector('meta[property="og:description"]');
     if (ogDesc && pub.descriptionCourte) {
         ogDesc.setAttribute('content', pub.descriptionCourte);
     }
-
-    // Mettre à jour l'URL canonique
     const canonique = document.querySelector('link[rel="canonical"]');
     if (canonique) {
         canonique.setAttribute('href', window.location.origin + '/publication.html?slug=' + pub.slug);
     }
+}
+
+function trouverPublicationSimilaire(pub, toutes) {
+    if (!pub || !toutes || toutes.length < 2) return null;
+
+    // Exclure la publication elle-même
+    const autres = toutes.filter(p => p.id !== pub.id);
+    if (autres.length === 0) return null;
+
+    // Score basé sur les catégories partagées
+    let meilleur = null;
+    let meilleurScore = -1;
+
+    autres.forEach(function(autre) {
+        let score = 0;
+        // Catégories communes
+        if (pub.categories && autre.categories) {
+            const intersection = pub.categories.filter(cat => autre.categories.includes(cat));
+            score += intersection.length * 3;
+        }
+        // Mots-clés communs
+        if (pub.motsCles && autre.motsCles) {
+            const interMots = pub.motsCles.filter(mot => autre.motsCles.includes(mot));
+            score += interMots.length;
+        }
+        // Même type
+        if (pub.type === autre.type) score += 2;
+
+        if (score > meilleurScore) {
+            meilleurScore = score;
+            meilleur = autre;
+        }
+    });
+
+    // Si aucun score positif, prendre un au hasard
+    if (meilleurScore <= 0) {
+        const randomIndex = Math.floor(Math.random() * autres.length);
+        meilleur = autres[randomIndex];
+    }
+
+    return meilleur ? meilleur.slug : null;
 }
 
 // Exposer les fonctions globalement

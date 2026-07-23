@@ -6,7 +6,7 @@
             "titre": "La famille, fondement de la société chrétienne",
             "date": "2025-12-12",
             "auteur": "Mme. Élisabeth de Montfort",
-            "type": "Article",
+            "type": "article",
             "descriptionCourte": "La famille est la cellule de base de la société. Sa restauration est la condition indispensable à la renaissance de la royauté légitime.",
             "imageCouverture": "images/famille-royale.jpg",
             "categories": ["societe", "philosophie"],
@@ -42,7 +42,7 @@
             "titre": "La liturgie royale du sacre",
             "date": "2025-12-20",
             "auteur": "Mgr. Étienne de Beaumont",
-            "type": "Article",
+            "type": "article",
             "descriptionCourte": "Le sacre des rois de France : signification spirituelle, rites et symboles de la consécration monarchique.",
             "imageCouverture": "images/sacre.jpg",
             "categories": ["theologie", "histoire", "royaute"],
@@ -91,7 +91,7 @@
             "titre": "Introduction à la philosophie politique légitimiste",
             "date": "2025-12-28",
             "auteur": "Dr. François de Blois",
-            "type": "Article",
+            "type": "article",
             "descriptionCourte": "Les principaux jalons de la pensée politique légitimiste, de saint Thomas d'Aquin à Joseph de Maistre.",
             "imageCouverture": "images/st-thomas.jpg",
             "categories": ["philosophie"],
@@ -127,11 +127,11 @@
         },
         {
             "id": 4,
-            "slug": "crise-modernite-et-royante",
+            "slug": "crise-modernite-et-royaute",
             "titre": "La crise de la modernité et la royauté",
             "date": "2026-01-05",
             "auteur": "Philippe de Saint-Martin",
-            "type": "Éditorial",
+            "type": "editorial",
             "descriptionCourte": "L'effondrement de la modernité ouvre la voie à un retour de la royauté légitime comme seul remède à la crise civilisationnelle.",
             "imageCouverture": "images/pride.jpg",
             "categories": ["philosophie", "politique", "editoriaux"],
@@ -167,7 +167,7 @@
             "titre": "Saint Louis, le roi parfait",
             "date": "2026-01-10",
             "auteur": "Abbé Henri Delacroix",
-            "type": "Article",
+            "type": "article",
             "descriptionCourte": "Portrait spirituel et politique de Saint Louis, modèle du roi chrétien et législateur de la France.",
             "imageCouverture": "images/louis-ix.jpg",
             "categories": ["histoire", "royaute", "theologie"],
@@ -219,7 +219,7 @@
             "titre": "Les fondements de la royauté légitime",
             "date": "2026-01-15",
             "auteur": "Père Jean-Baptiste de La Tour",
-            "type": "Article",
+            "type": "article",
             "descriptionCourte": "Une réflexion approfondie sur les fondements théologiques et philosophiques de la royauté légitime selon la tradition catholique.",
             "imageCouverture": "images/sacre-charles-vii.jpg",
             "categories": ["royaute", "theologie", "histoire"],
@@ -273,6 +273,66 @@
                     "url": "histoire.html"
                 }
             ]
-        }   
+        },
+        {
+            "id": 7,
+            "slug": "conference-royaute-2026",
+            "titre": "Conférence sur la royauté – 2026",
+            "date": "2026-02-01",
+            "auteur": "Père Jean-Baptiste de La Tour",
+            "type": "video",
+            "descriptionCourte": "Conférence donnée à Paris sur les fondements de la royauté légitime, avec extraits vidéo.",
+            "imageCouverture": "images/conference.png",
+            "categories": ["royaute", "evenements"],
+            "motsCles": ["conférence", "royauté", "Paris", "2026"],
+            "contenu": [
+                {
+                    "type": "titre",
+                    "texte": "Conférence sur la royauté légitime"
+                },
+                {
+                    "type": "paragraphe",
+                    "texte": "Le 15 janvier 2026, une conférence a réuni plus de 200 personnes à Paris pour débattre de l'avenir de la royauté en France. Vous trouverez ci-dessous l'intégralité des interventions."
+                },
+                {
+                    "type": "youtube",
+                    "url": "https://www.youtube.com/watch?v=WQQYzGYMojc"
+                },
+                {
+                    "type": "paragraphe",
+                    "texte": "Après cette vidéo, nous vous invitons à consulter les autres ressources disponibles sur le site."
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "slug": "entretien-exclusif",
+            "titre": "Entretien exclusif avec un historien",
+            "date": "2026-02-05",
+            "auteur": "Philippe de Saint-Martin",
+            "type": "video",
+            "descriptionCourte": "Un entretien filmé avec l'historien François-Xavier de Bourbon sur l'actualité légitimiste.",
+            "imageCouverture": "images/entretien.jpg",
+            "categories": ["histoire", "politique"],
+            "motsCles": ["entretien", "historien", "légitimisme"],
+            "contenu": [
+                {
+                    "type": "titre",
+                    "texte": "Entretien avec François-Xavier de Bourbon"
+                },
+                {
+                    "type": "paragraphe",
+                    "texte": "Nous avons rencontré l'historien François-Xavier de Bourbon pour évoquer les racines du légitimisme et ses perspectives contemporaines."
+                },
+                {
+                    "type": "video",
+                    "src": "assets/messe-louis-xvi.mp4"
+                },
+                {
+                    "type": "paragraphe",
+                    "texte": "Cet entretien est également disponible en podcast sur notre chaîne."
+                }
+            ]
+        }
     ]
 }
