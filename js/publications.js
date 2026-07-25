@@ -109,18 +109,21 @@ function genererCartePublication(pub) {
     };
     const typeLabel = typeLabels[pub.type] || pub.type || 'Publication';
 
+    // On crée un lien qui englobe TOUTE la carte
     return `
         <div class="carte-publication">
-            ${imageHtml}
-            <div class="pub-contenu">
-                <div class="pub-categories">${badgeCats}</div>
-                <h3 class="pub-titre"><a href="publication.html?slug=${pub.slug}">${pub.titre}</a></h3>
-                <p class="pub-description">${pub.descriptionCourte || ''}</p>
-                <div class="pub-metadonnees">
-                    <span>${dateFormatee}</span>
-                    <span class="pub-type">${typeLabel}</span>
+            <a href="publication.html?slug=${pub.slug}" class="carte-lien">
+                ${imageHtml}
+                <div class="pub-contenu">
+                    <div class="pub-categories">${badgeCats}</div>
+                    <h3 class="pub-titre">${pub.titre}</h3>
+                    <p class="pub-description">${pub.descriptionCourte || ''}</p>
+                    <div class="pub-metadonnees">
+                        <span>${dateFormatee}</span>
+                        <span class="pub-type">${typeLabel}</span>
+                    </div>
                 </div>
-            </div>
+            </a>
         </div>
     `;
 }
@@ -261,13 +264,23 @@ async function chargerPublicationParSlug(slug, conteneurId) {
     const typeLabel = typeLabels[pub.type] || pub.type || 'Publication';
 
     if (heroContainer) {
-        heroContainer.innerHTML = `
+        /*heroContainer.innerHTML = `
             <div class="pub-categories">${badgesCats}</div>
             <h1 class="hero-titre">${pub.titre}</h1>
             <div class="pub-metadonnees" style="color:rgba(255,255,255,0.8);display:flex;flex-wrap:wrap;gap:16px;justify-content:center;font-size:1rem;">
                 <span>Par ${auteur}</span>
                 <span>${dateFormatee}</span>
                 <span style="font-weight:500;color:var(--ocre-clair);">${typeLabel}</span>
+            </div>
+        `;*/
+
+        heroContainer.innerHTML = `
+            <div class="pub-categories">${badgesCats}</div>
+            <h1 class="hero-titre">${pub.titre}</h1>
+            <div class="pub-metadonnees-hero">
+                <span>Par ${auteur}</span>
+                <span>${dateFormatee}</span>
+                <span class="pub-type-hero">${typeLabel}</span>
             </div>
         `;
     }

@@ -1568,3 +1568,63 @@ h4 {
     color: var(--ocre-clair);
     transform: translateY(-1px);
 }
+
+/* ---------- HERO : TITRE BLANC ET MÉTADONNÉES ÉLÉGANTES ---------- */
+.hero .hero-titre {
+    color: #ffffff !important;
+}
+
+/* Marge entre le titre et les métadonnées */
+.hero-contenu .pub-metadonnees-hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 0.75rem;
+    font-family: var(--police-texte);
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.75);
+    letter-spacing: 0.03em;
+}
+
+/* Badge du type (Article, Vidéo, etc.) dans le héros */
+.hero-contenu .pub-type-hero {
+    display: inline-block;
+    padding: 4px 18px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #ffffff !important;
+    /* On écrase le jaune précédent */
+}
+
+/* Ajustement des marges entre titre et sous-titre sur tous les héros */
+.hero .hero-sous-titre {
+    margin-top: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ---------- CARTE ENTIÈREMENT CLIQUABLE ---------- */
+.carte-publication .carte-lien {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Effet de survol : on garde l’animation sur la carte parente */
+.carte-publication:hover .pub-titre {
+    color: var(--bleu-principal);
+}
+
+/* On s’assure que les catégories ne soient pas affectées par le survol du lien */
+.carte-publication .carte-lien:hover .pub-categorie {
+    transform: none;
+}
