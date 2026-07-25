@@ -1648,3 +1648,15 @@ h4 {
     rgba(189, 143, 40, 0.12) 100%);
     z-index: 0;
 }*/
+
+
+/* ---------- CORRECTION MENU BURGER : ASSURER LA SUPERPOSITION ---------- */
+@media (max-width: 1024px) {
+    #navigation-principale {
+        z-index: 10000 !important; /* Très haut pour être au-dessus de tout */
+    }
+    #navigation-principale #menu-principal > li > a {
+        position: relative;
+        z-index: 10001 !important;
+    }
+}

@@ -131,7 +131,9 @@
         if (!overlay) {
             overlay = document.createElement('div');
             overlay.id = 'menu-overlay';
-            document.body.appendChild(overlay);
+            // INSÉRER L'OVERLAY AVANT LE MENU DANS LE DOM
+            // Comme ça le menu est physiquement au-dessus
+            document.body.insertBefore(overlay, nav);
         }
 
         function ouvrirMenu() {
@@ -148,13 +150,11 @@
             menuBurger.setAttribute('aria-expanded', 'false');
             overlay.classList.remove('visible');
             document.body.style.overflow = '';
-            // Fermer les sous-menus ouverts
             document.querySelectorAll('.sous-menu.ouvert').forEach(function(s) {
                 s.classList.remove('ouvert');
             });
         }
 
-        // Bascule du burger
         menuBurger.addEventListener('click', function(e) {
             e.stopPropagation();
             if (nav.classList.contains('ouvert')) {
@@ -177,25 +177,22 @@
             }
         });
 
-        // Fermer en redimensionnant au-dessus de 1024px
+        // Fermer en redimensionnant
         window.addEventListener('resize', function() {
             if (window.innerWidth > 1024 && nav.classList.contains('ouvert')) {
                 fermerMenu();
             }
         });
 
-        // Ne pas ajouter d'écouteur sur les liens individuellement.
-        // Utiliser un écouteur sur le nav pour détecter les clics sur les liens
-        // et fermer le menu après la navigation.
+        // Quand on clique sur un lien, fermer le menu
         nav.addEventListener('click', function(e) {
             const target = e.target.closest('a');
             if (target && target.getAttribute('href') && !target.getAttribute('href').startsWith('#')) {
-                // C'est un lien de navigation, on ferme le menu après un court délai
                 setTimeout(function() {
                     fermerMenu();
-                }, 200);
+                }, 150);
             }
-        }, true); // capture pour être sûr
+        });
     }
 
     // Initialisation
