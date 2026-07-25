@@ -51,7 +51,7 @@
         {
             "id": "actualites",
             "nom": "Actualités",
-            "description": "Actualités du Pôle doctrinal",
+            "description": "Points de vue sur l'actualité",
             "icone": "📰",
             "couleur": "#D97A22",
             "lien": "actualites.html"
