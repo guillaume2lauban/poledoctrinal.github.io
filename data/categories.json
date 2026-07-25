@@ -29,7 +29,7 @@
             "nom": "Royauté",
             "description": "Fondements et devoirs de la royauté",
             "icone": "👑",
-            "couleur": "#BD8F28",
+            "couleur": "#6A1B4D",
             "lien": "royaute.html"
         },
         {
@@ -45,7 +45,7 @@
             "nom": "Société",
             "description": "Ordre social, famille et corporatisme",
             "icone": "👨‍👩‍👧‍👦",
-            "couleur": "#163366",
+            "couleur": "#0F6B3A",
             "lien": "societe.html"
         },
         {
@@ -53,7 +53,7 @@
             "nom": "Actualités",
             "description": "Actualités du Pôle doctrinal",
             "icone": "📰",
-            "couleur": "#1E438C",
+            "couleur": "#D97A22",
             "lien": "actualites.html"
         },
         {
@@ -61,7 +61,7 @@
             "nom": "Éditoriaux",
             "description": "Prises de position et réflexions",
             "icone": "✍️",
-            "couleur": "#B22234",
+            "couleur": "#8B1A1A",
             "lien": "editoriaux.html"
         },
         {
@@ -69,7 +69,7 @@
             "nom": "Vidéos",
             "description": "Conférences et contenus audiovisuels",
             "icone": "🎥",
-            "couleur": "#2A5EB0",
+            "couleur": "#4A6B8A",
             "lien": "videos.html"
         },
         {
@@ -77,7 +77,7 @@
             "nom": "Évènements",
             "description": "Évènements et manifestations",
             "icone": "🗓️",
-            "couleur": "#BD8F28",
+            "couleur": "#C07C2E",
             "lien": "evenements.html"
         }
     ]

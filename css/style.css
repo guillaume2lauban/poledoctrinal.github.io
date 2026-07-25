@@ -1535,3 +1535,36 @@ h4 {
         gap: 8px;
     }
 }
+
+/* ---------- CATÉGORIES DANS LE HERO ---------- */
+.hero-contenu .pub-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 1.2rem;
+}
+
+.hero-contenu .pub-categorie {
+    display: inline-block;
+    padding: 6px 18px;
+    font-family: var(--police-texte);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    border-radius: 50px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+}
+
+.hero-contenu .pub-categorie:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: var(--ocre-clair);
+    color: var(--ocre-clair);
+    transform: translateY(-1px);
+}
