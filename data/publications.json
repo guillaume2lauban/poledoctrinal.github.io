@@ -283,7 +283,7 @@
             "type": "video",
             "descriptionCourte": "Conférence donnée à Paris sur les fondements de la royauté légitime, avec extraits vidéo.",
             "imageCouverture": "images/conference.png",
-            "categories": ["royaute", "evenements"],
+            "categories": ["royaute", "evenements", "videos"],
             "motsCles": ["conférence", "royauté", "Paris", "2026"],
             "contenu": [
                 {
@@ -313,7 +313,7 @@
             "type": "video",
             "descriptionCourte": "Un entretien filmé avec l'historien François-Xavier de Bourbon sur l'actualité légitimiste.",
             "imageCouverture": "images/entretien.jpg",
-            "categories": ["histoire", "politique"],
+            "categories": ["histoire", "politique", "videos"],
             "motsCles": ["entretien", "historien", "légitimisme"],
             "contenu": [
                 {
