@@ -1660,3 +1660,9 @@ h4 {
         z-index: 10001 !important;
     }
 }
+
+/* FORCER L'AFFICHAGE DU MENU QUAND OUVERT */
+#navigation-principale.ouvert {
+    display: block !important;
+    right: 0 !important;
+}

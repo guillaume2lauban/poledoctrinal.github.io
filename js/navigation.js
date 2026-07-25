@@ -124,19 +124,27 @@
      * Gère le menu burger mobile
      */
     function gererMenuBurger() {
-        if (!menuBurger) return;
+        console.log('gererMenuBurger appelée');
+        if (!menuBurger) {
+            console.error('menuBurger introuvable');
+            return;
+        }
         const nav = document.getElementById('navigation-principale');
+        if (!nav) {
+            console.error('navigation-principale introuvable');
+            return;
+        }
         let overlay = document.getElementById('menu-overlay');
 
         if (!overlay) {
             overlay = document.createElement('div');
             overlay.id = 'menu-overlay';
-            // INSÉRER L'OVERLAY AVANT LE MENU DANS LE DOM
-            // Comme ça le menu est physiquement au-dessus
             document.body.insertBefore(overlay, nav);
+            console.log('overlay créé');
         }
 
         function ouvrirMenu() {
+            console.log('ouvrirMenu');
             nav.classList.add('ouvert');
             menuBurger.classList.add('actif');
             menuBurger.setAttribute('aria-expanded', 'true');
@@ -145,6 +153,7 @@
         }
 
         function fermerMenu() {
+            console.log('fermerMenu');
             nav.classList.remove('ouvert');
             menuBurger.classList.remove('actif');
             menuBurger.setAttribute('aria-expanded', 'false');
@@ -155,8 +164,11 @@
             });
         }
 
+        // Événement click sur le burger
         menuBurger.addEventListener('click', function(e) {
+            e.preventDefault();
             e.stopPropagation();
+            console.log('click sur burger');
             if (nav.classList.contains('ouvert')) {
                 fermerMenu();
             } else {
@@ -164,33 +176,30 @@
             }
         });
 
-        // Fermer via l'overlay
         overlay.addEventListener('click', function(e) {
             e.stopPropagation();
             fermerMenu();
         });
 
-        // Fermer avec Échap
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && nav.classList.contains('ouvert')) {
                 fermerMenu();
             }
         });
 
-        // Fermer en redimensionnant
         window.addEventListener('resize', function() {
             if (window.innerWidth > 1024 && nav.classList.contains('ouvert')) {
                 fermerMenu();
             }
         });
 
-        // Quand on clique sur un lien, fermer le menu
+        // Fermer après clic sur un lien
         nav.addEventListener('click', function(e) {
             const target = e.target.closest('a');
             if (target && target.getAttribute('href') && !target.getAttribute('href').startsWith('#')) {
                 setTimeout(function() {
                     fermerMenu();
-                }, 150);
+                }, 200);
             }
         });
     }
