@@ -1488,7 +1488,7 @@ h4 {
     #navigation-principale #menu-principal > li .sous-menu {
         position: static !important;
         opacity: 1 !important;
-        pointer-events: auto !important;
+        /*pointer-events: auto !important;*/
         transform: none !important;
         box-shadow: none !important;
         border: none !important;
