@@ -1217,13 +1217,7 @@ h4 {
     position: relative;
     isolation: isolate;
 }
-.hero-page::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(10, 26, 46, 0.65); /* Superposition pour la lisibilité */
-    z-index: 0;
-}
+
 .hero-page .conteneur-hero {
     position: relative;
     z-index: 1;
@@ -1363,13 +1357,7 @@ h4 {
     position: relative;
     isolation: isolate;
 }
-.hero-page::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: rgba(10, 26, 46, 0.65);
-    z-index: 0;
-}
+
 .hero-page .conteneur-hero {
     position: relative;
     z-index: 1;
@@ -1627,4 +1615,14 @@ h4 {
 /* On s’assure que les catégories ne soient pas affectées par le survol du lien */
 .carte-publication .carte-lien:hover .pub-categorie {
     transform: none;
+}
+
+/* Option 3 */
+
+.hero-page::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(20, 20, 30, 0.7) 0%, rgba(40, 40, 60, 0.4) 100%);
+    z-index: 0;
 }
