@@ -124,27 +124,23 @@
      * Gère le menu burger mobile
      */
     function gererMenuBurger() {
-        console.log('gererMenuBurger appelée');
-        if (!menuBurger) {
-            console.error('menuBurger introuvable');
-            return;
-        }
+        if (!menuBurger) return;
         const nav = document.getElementById('navigation-principale');
-        if (!nav) {
-            console.error('navigation-principale introuvable');
-            return;
-        }
         let overlay = document.getElementById('menu-overlay');
 
         if (!overlay) {
             overlay = document.createElement('div');
             overlay.id = 'menu-overlay';
-            document.body.insertBefore(overlay, nav);
-            console.log('overlay créé');
+            // Placer l'overlay avant le header pour qu'il soit sous le menu
+            const header = document.getElementById('site-header');
+            if (header) {
+                document.body.insertBefore(overlay, header);
+            } else {
+                document.body.appendChild(overlay);
+            }
         }
 
         function ouvrirMenu() {
-            console.log('ouvrirMenu');
             nav.classList.add('ouvert');
             menuBurger.classList.add('actif');
             menuBurger.setAttribute('aria-expanded', 'true');
@@ -153,7 +149,6 @@
         }
 
         function fermerMenu() {
-            console.log('fermerMenu');
             nav.classList.remove('ouvert');
             menuBurger.classList.remove('actif');
             menuBurger.setAttribute('aria-expanded', 'false');
@@ -164,11 +159,8 @@
             });
         }
 
-        // Événement click sur le burger
         menuBurger.addEventListener('click', function(e) {
-            e.preventDefault();
             e.stopPropagation();
-            console.log('click sur burger');
             if (nav.classList.contains('ouvert')) {
                 fermerMenu();
             } else {
@@ -193,13 +185,13 @@
             }
         });
 
-        // Fermer après clic sur un lien
+        // Gérer les clics sur les liens
         nav.addEventListener('click', function(e) {
             const target = e.target.closest('a');
             if (target && target.getAttribute('href') && !target.getAttribute('href').startsWith('#')) {
                 setTimeout(function() {
                     fermerMenu();
-                }, 200);
+                }, 150);
             }
         });
     }

@@ -1666,3 +1666,14 @@ h4 {
     display: block !important;
     right: 0 !important;
 }
+
+/* ---------- CORRECTION MENU BURGER : Z-INDEX ÉLEVÉ ---------- */
+@media (max-width: 1024px) {
+    #navigation-principale {
+        z-index: 10000 !important; /* S'assure que le menu est au-dessus de tout */
+    }
+    #navigation-principale #menu-principal > li > a {
+        z-index: 10001 !important;
+        position: relative;
+    }
+}
