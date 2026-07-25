@@ -1,0 +1,16 @@
+id 4
+,
+                {
+                    "type": "bouton",
+                    "texte": "Lire l'éditorial complet",
+                    "url": "editoriaux.html"
+                }
+
+
+id 6 
+,
+                {
+                    "type": "bouton",
+                    "texte": "Lire la suite sur l'histoire",
+                    "url": "histoire.html"
+                }

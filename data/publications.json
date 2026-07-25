@@ -153,11 +153,6 @@
                 {
                     "type": "paragraphe",
                     "texte": "Dans ce chaos, la royauté légitime apparaît comme le seul principe d'ordre capable de rétablir la hiérarchie naturelle et divine. Le roi, lieutenant de Dieu, est le garant de l'unité du corps social."
-                },
-                {
-                    "type": "bouton",
-                    "texte": "Lire l'éditorial complet",
-                    "url": "editoriaux.html"
                 }
             ]
         },
@@ -266,11 +261,6 @@
                 {
                     "type": "paragraphe",
                     "texte": "La continuité dynastique est la garantie de la pérennité du royaume. La branche aînée des Capétiens, issue de Hugues Capet, est la seule à pouvoir légitimement prétendre au trône."
-                },
-                {
-                    "type": "bouton",
-                    "texte": "Lire la suite sur l'histoire",
-                    "url": "histoire.html"
                 }
             ]
         },
