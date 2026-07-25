@@ -1410,12 +1410,12 @@ h4 {
     background: rgba(0, 0, 0, 0.5);
     z-index: 999;
     opacity: 0;
-    pointer-events: none;
+    pointer-events: none; /* NE BLOQUE PAS LES CLICS */
     transition: opacity 0.3s ease;
 }
 #menu-overlay.visible {
     opacity: 1;
-    pointer-events: auto;
+    pointer-events: none; /* TOUJOURS NON BLOQUANT */
 }
 
 /* ---------- MENU BURGER ---------- */
@@ -1675,5 +1675,11 @@ h4 {
     #navigation-principale #menu-principal > li > a {
         z-index: 10001 !important;
         position: relative;
+    }
+}
+
+@media (max-width: 1024px) {
+    #navigation-principale {
+        z-index: 1000 !important;
     }
 }

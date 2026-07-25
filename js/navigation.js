@@ -131,13 +131,7 @@
         if (!overlay) {
             overlay = document.createElement('div');
             overlay.id = 'menu-overlay';
-            // Placer l'overlay avant le header pour qu'il soit sous le menu
-            const header = document.getElementById('site-header');
-            if (header) {
-                document.body.insertBefore(overlay, header);
-            } else {
-                document.body.appendChild(overlay);
-            }
+            document.body.appendChild(overlay);
         }
 
         function ouvrirMenu() {
@@ -159,8 +153,9 @@
             });
         }
 
+        // Bascule du burger
         menuBurger.addEventListener('click', function(e) {
-            e.stopPropagation();
+            e.stopPropagation(); // Empêche la fermeture immédiate
             if (nav.classList.contains('ouvert')) {
                 fermerMenu();
             } else {
@@ -168,30 +163,37 @@
             }
         });
 
-        overlay.addEventListener('click', function(e) {
-            e.stopPropagation();
-            fermerMenu();
+        // Fermeture si on clique en dehors du menu ET en dehors du burger
+        document.addEventListener('click', function(e) {
+            if (!nav.classList.contains('ouvert')) return;
+            const target = e.target;
+            // Si le clic n'est pas dans le menu ET n'est pas sur le burger
+            if (!nav.contains(target) && !menuBurger.contains(target)) {
+                fermerMenu();
+            }
         });
 
+        // Fermer avec Échap
         document.addEventListener('keydown', function(e) {
             if (e.key === 'Escape' && nav.classList.contains('ouvert')) {
                 fermerMenu();
             }
         });
 
+        // Fermer en redimensionnant au-dessus de 1024px
         window.addEventListener('resize', function() {
             if (window.innerWidth > 1024 && nav.classList.contains('ouvert')) {
                 fermerMenu();
             }
         });
 
-        // Gérer les clics sur les liens
+        // Lorsqu'on clique sur un lien dans le menu, fermer après navigation
         nav.addEventListener('click', function(e) {
             const target = e.target.closest('a');
             if (target && target.getAttribute('href') && !target.getAttribute('href').startsWith('#')) {
                 setTimeout(function() {
                     fermerMenu();
-                }, 150);
+                }, 200);
             }
         });
     }
