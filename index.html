@@ -64,15 +64,14 @@
             />
           </a>
         </div>
-        <button
-          id="menu-burger"
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+        <label
+          for="menu-toggle"
           class="menu-burger"
-          aria-expanded="false"
-          aria-controls="navigation-principale"
           aria-label="Ouvrir le menu"
         >
           <span></span><span></span><span></span>
-        </button>
+        </label>
         <nav
           id="navigation-principale"
           role="navigation"
@@ -80,6 +79,7 @@
         >
           <ul id="menu-principal"></ul>
         </nav>
+        <div id="menu-overlay"></div>
       </div>
     </header>
 

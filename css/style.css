@@ -1488,7 +1488,7 @@ h4 {
     #navigation-principale #menu-principal > li .sous-menu {
         position: static !important;
         opacity: 1 !important;
-        /*pointer-events: auto !important;*/
+        pointer-events: auto !important;
         transform: none !important;
         box-shadow: none !important;
         border: none !important;
@@ -1682,4 +1682,237 @@ h4 {
     #navigation-principale {
         z-index: 1000 !important;
     }
+}
+
+/* ---------- MENU BURGER AVEC CHECKBOX ---------- */
+.menu-toggle {
+    display: none; /* Cacher la checkbox */
+}
+
+.menu-burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 8px;
+    cursor: pointer;
+    z-index: 1100;
+    position: relative;
+    background: transparent;
+    border: none;
+}
+.menu-burger span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: var(--noir);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Animation du burger quand la checkbox est cochée */
+#menu-toggle:checked + .menu-burger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+#menu-toggle:checked + .menu-burger span:nth-child(2) {
+    opacity: 0;
+}
+#menu-toggle:checked + .menu-burger span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+}
+
+/* Overlay */
+#menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 998;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+#menu-toggle:checked ~ #menu-overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* Menu overlay */
+@media (max-width: 1024px) {
+    .menu-burger {
+        display: flex !important;
+    }
+    #navigation-principale {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 360px;
+        height: 100vh;
+        height: 100dvh;
+        background: var(--blanc);
+        box-shadow: var(--ombre-forte);
+        padding: 80px 32px 32px;
+        z-index: 999;
+        overflow-y: auto;
+        border-left: 1px solid var(--gris-moyen);
+        transition: right 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        display: block !important;
+    }
+    #menu-toggle:checked ~ #navigation-principale {
+        right: 0;
+    }
+    #navigation-principale #menu-principal {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 4px !important;
+    }
+    #navigation-principale #menu-principal > li > a {
+        padding: 12px 16px !important;
+        font-size: 1.05rem !important;
+        border-radius: 8px !important;
+        white-space: normal !important;
+    }
+    #navigation-principale #menu-principal > li .sous-menu {
+        position: static !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        transform: none !important;
+        box-shadow: none !important;
+        border: none !important;
+        padding-left: 16px !important;
+        background: transparent !important;
+        display: none !important;
+    }
+    #navigation-principale #menu-principal > li .sous-menu.ouvert {
+        display: block !important;
+    }
+}
+
+@media (min-width: 1025px) {
+    .menu-burger {
+        display: none !important;
+    }
+    #navigation-principale {
+        display: flex !important;
+        position: static;
+        width: auto;
+        height: auto;
+        padding: 0;
+        box-shadow: none;
+        border-left: none;
+        background: transparent;
+        overflow: visible;
+        transition: none;
+    }
+    #menu-principal {
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 8px !important;
+    }
+    #menu-toggle:checked ~ #navigation-principale {
+        right: auto !important;
+    }
+}
+
+/* ---------- MENU BURGER AVEC CHECKBOX ---------- */
+.menu-toggle {
+    display: none; /* Cacher la checkbox */
+}
+
+.menu-burger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 8px;
+    cursor: pointer;
+    z-index: 1100;
+    position: relative;
+}
+.menu-burger span {
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: var(--noir);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+#menu-toggle:checked + .menu-burger span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 6px);
+}
+#menu-toggle:checked + .menu-burger span:nth-child(2) {
+    opacity: 0;
+}
+#menu-toggle:checked + .menu-burger span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -6px);
+}
+
+#menu-toggle:checked ~ #menu-overlay {
+    opacity: 1;
+    pointer-events: auto;
+}
+#menu-toggle:checked ~ #navigation-principale {
+    display: block !important;
+    right: 0 !important;
+}
+
+@media (max-width: 1024px) {
+    .menu-burger {
+        display: flex !important;
+    }
+    #navigation-principale {
+        display: none !important;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 360px;
+        height: 100vh;
+        height: 100dvh;
+        background: var(--blanc);
+        box-shadow: var(--ombre-forte);
+        padding: 80px 32px 32px;
+        z-index: 1000;
+        overflow-y: auto;
+        border-left: 1px solid var(--gris-moyen);
+        transition: right 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    #navigation-principale #menu-principal {
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 4px !important;
+    }
+    #navigation-principale #menu-principal > li > a {
+        padding: 12px 16px !important;
+        font-size: 1.05rem !important;
+        border-radius: 8px !important;
+        white-space: normal !important;
+    }
+    #navigation-principale #menu-principal > li .sous-menu {
+        position: static !important;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+        transform: none !important;
+        box-shadow: none !important;
+        border: none !important;
+        padding-left: 16px !important;
+        background: transparent !important;
+        display: none !important;
+    }
+    #navigation-principale #menu-principal > li .sous-menu.ouvert {
+        display: block !important;
+    }
+}
+
+#menu-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+#menu-overlay.visible {
+    opacity: 1;
+    pointer-events: none; /* Ne bloque pas les clics */
 }

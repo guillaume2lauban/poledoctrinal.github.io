@@ -124,7 +124,7 @@
      * Gère le menu burger mobile
      */
     function gererMenuBurger() {
-        if (!menuBurger) return;
+        /*if (!menuBurger) return;
         const nav = document.getElementById('navigation-principale');
         let overlay = document.getElementById('menu-overlay');
 
@@ -195,7 +195,7 @@
                     fermerMenu();
                 }, 200);
             }
-        });
+        });*/
     }
 
     // Initialisation
