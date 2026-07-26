@@ -201,13 +201,13 @@
     // Initialisation
     document.addEventListener('DOMContentLoaded', function() {
         chargerNavigation();
-        gererMenuBurger();
+        //gererMenuBurger();
     });
 
     // Si le DOM est déjà chargé
     if (document.readyState === 'complete' || document.readyState === 'interactive') {
         chargerNavigation();
-        gererMenuBurger();
+        //gererMenuBurger();
     }
 
 })();
